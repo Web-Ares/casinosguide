@@ -63,13 +63,14 @@
     height: 32px;
     text-align: center;
     background: url(../img/title_bg.png);
-    margin-bottom: 6px;
     padding: 12px 0 0 0;
     font-size: 12px;
+    margin-bottom: 5px;
     color: #727272;
     font-family: "Lato Semibold", sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.4px;
+    z-index: 3;
 }
 .site {
     min-height: 100%;
@@ -146,6 +147,9 @@
 @media (min-width: 768px) {
 
     /* --------------- site --------------- */
+    .site__title {
+        margin-bottom: 0;
+    }
     .site__header {
         height: 98px;
         background-size: 100% 100%;
@@ -166,6 +170,11 @@
 @media (min-width: 960px) {
 
     /* --------------- site --------------- */
+    .site__title {
+        height: 65px;
+        font-size: 19px;
+        padding-top: 27px;
+    }
     .site__header {
         height: 183px;
         background-size: 125% 100%;
