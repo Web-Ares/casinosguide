@@ -67,9 +67,9 @@
     padding: 12px 0 0 0;
     font-size: 12px;
     color: #727272;
-    font-family: "Lato-Bold", sans-serif;
+    font-family: "Lato Semibold", sans-serif;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 0.4px;
 }
 .site {
     min-height: 100%;
