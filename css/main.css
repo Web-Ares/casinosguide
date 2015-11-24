@@ -129,7 +129,19 @@
     height: auto;
 }
 /* --------------- /logo --------------- */
+/* --------------- top-casinos --------------- */
+.top-casinos{
 
+}
+.top-casinos__title{
+    height: 31px;
+    width: 100%;
+    border:1px solid #dddddd;
+    font-size: 12px;
+    color: #7a7979;
+    text-align: center;
+}
+/* --------------- /top-casinos --------------- */
 @media (min-width: 768px) {}
 @media (min-width: 960px) {}
 @media (min-width: 1150px) {}
