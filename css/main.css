@@ -106,5 +106,16 @@
     position: absolute;
     top: 0;
     left: 0;
+    width: 389px;
+    height: 176px;
+}
+.logo img{
+    display: block;
+    width: 100%;
+    height: auto;
 }
 /* --------------- /logo --------------- */
+
+@media (min-width: 768px) {}
+@media (min-width: 960px) {}
+@media (min-width: 1150px) {}
