@@ -84,7 +84,6 @@
     display: block;
     clear: both;
     width: 100%;
-
     height: 100px;
 }
 .site__content {
@@ -93,11 +92,10 @@
 }
 .site__header {
     position: relative;
-
-    height: 100px;
-    background: red;
+    height: 92px;
+    background: url("../img/header-bg.jpg") no-repeat;
+    background-size: 200% 100%;
     z-index: 3;
-
 }
 .site__footer {
     z-index: 2;
@@ -118,10 +116,11 @@
 /* --------------- logo --------------- */
 .logo {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 389px;
-    height: 176px;
+    top: 3px;
+    left: 50%;
+    width: 195px;
+    height: 88px;
+    margin-left: -87px;
 }
 .logo img{
     display: block;
@@ -142,6 +141,71 @@
     text-align: center;
 }
 /* --------------- /top-casinos --------------- */
-@media (min-width: 768px) {}
-@media (min-width: 960px) {}
-@media (min-width: 1150px) {}
+
+@media (min-width: 768px) {
+
+    /* --------------- site --------------- */
+    .site__header {
+        height: 98px;
+        background-size: 100% 100%;
+    }
+    /* --------------- /site --------------- */
+
+    /* --------------- logo --------------- */
+    .logo {
+        top: 2px;
+        left: 110px;
+        width: 195px;
+        height: 88px;
+        margin-left: 0;
+    }
+    /* --------------- /logo --------------- */
+
+}
+@media (min-width: 960px) {
+
+    /* --------------- site --------------- */
+    .site__header {
+        height: 183px;
+        background-size: 125% 100%;
+    }
+    .site__header>div{
+        position: relative;
+        width: 960px;
+        margin: 0 auto;
+    }
+    /* --------------- /site --------------- */
+
+    /* --------------- logo --------------- */
+    .logo {
+        top: 5px;
+        left: 17px;
+        width: 390px;
+        height: 176px;
+        margin-left: 0;
+    }
+    /* --------------- /logo --------------- */
+
+}
+@media (min-width: 1150px) {
+
+    /* --------------- site --------------- */
+    .site__header {
+        height: 197px;
+        background-size: 100% 100%;
+    }
+    .site__header>div{
+        width: 1150px;
+    }
+    /* --------------- /site --------------- */
+
+    /* --------------- logo --------------- */
+    .logo {
+        top: 0;
+        left: 0;
+        width: 389px;
+        height: 176px;
+    }
+    /* --------------- /logo --------------- */
+
+}
