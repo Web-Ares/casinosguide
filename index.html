@@ -53,7 +53,7 @@
 
                 <h1 class="site__title">Top 10 casinos</h1><!--/site__title-->
 
-                <div class="site__content__item">
+                <div class="site__content__item top-casinos-games">
 
                     <!--top-casinos-->
                     <div class="top-casinos">
@@ -61,11 +61,13 @@
                         <!-- top-casinos__head -->
                         <div class="top-casinos__head">
 
+                            <div class="top-casinos-number">#</div>
+                            <div class="top-casinos-country">Country</div>
                             <div class="top-casinos-casino">Casino</div>
-                            <div class="top-casinos-score">Score</div>
-                            <div class="top-casinos-votes">votes</div>
-                            <div class="top-casinos-bonus">bonus</div>
-                            <div></div>
+                            <div class="top-casinos-bonus">Bonuses</div>
+                            <div class="top-casinos-os">mobile vers</div>
+                            <div class="top-casinos-soft">Software</div>
+
                         </div>
                         <!-- /top-casinos__head -->
 
@@ -73,12 +75,17 @@
                         <div class="top-casinos__item">
 
                             <div>
-                                <span></span>
+                                <span>1</span>
                                 <div>
 
                                     <!-- top-casinos__item-logo -->
                                     <div class="top-casinos__item-logo">
-                                        <img src="img/casino-gates.png" alt="logo">
+                                        <span class="show-mobile">
+                                            <img src="img/casino-gates.png" alt="logo">
+                                        </span>
+                                        <span class="show-desktop">
+                                            <img src="img/casino-gates2.png" alt="logo">
+                                        </span>
                                         <h3>Casino Gates</h3>
 
                                         <!-- top-casinos__score -->
@@ -91,7 +98,7 @@
                                             <!-- /top-casinos__rating -->
 
                                             <!-- top-casinos__score-count -->
-                                            <div class="top-casinos__score-count"><span>2.7</span>/5</div>
+                                            <div class="top-casinos__score-count show-mobile"><span>2.7</span>/5</div>
                                             <!-- /top-casinos__score-count -->
 
                                         </div>
@@ -109,7 +116,7 @@
 
                             <div>
                                 <span>Bonuses</span>
-                                <div>
+                                <div class="top-casinos-bonus-1">
                                     <span class="price">$100</span> Other Games  Bonus
                                 </div>
                             </div>
@@ -123,8 +130,9 @@
 
                                             <img src="img/mac-image.png" alt="system-image">
                                             <img src="img/android-image.png" alt="system-image">
-                                            <img src="img/windows-image.png" alt="system-image">
-                                            <img src="img/windowsxp-image.png" alt="system-image">
+                                            <img src="img/windows-image.png" class="show-mobile" alt="system-image">
+                                            <img src="img/windowsxp-image.png" class="show-mobile" alt="system-image">
+
                                         </div>
 
                                     </div>
