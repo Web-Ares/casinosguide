@@ -873,6 +873,8 @@
     }
     .country-flags {
         margin-right: 54px;
+        position: relative;
+        top: 13px;
     }
     .show-mobile{
         display: none;
@@ -884,7 +886,7 @@
         width: 93px;
         height: 16px;
         background-size: 19px 16px;
-        margin-left: -11px;
+        margin-left: -18px;
         margin-top: 6px;
     }
     .top-casinos__rating > div {
@@ -901,24 +903,32 @@
     }
     .top-casinos-bonus-1{
         width: 90px;
-        margin-right: 42px;
+        margin-right: 14px;
     }
     .systems>img {
         height: 30px;
     }
     .systems{
         width: 80px;
+        position: relative;
+        top: -7px;
+        margin-right: 9px;
     }
     .top-casinos-compare img {
         height: 33px;
     }
     .top-casinos-rate img{
         height: 20px;
+        margin-right: 5px;
     }
     .top-casinos-software {
-        width: 78px;
+        width: 85px;
         display: block;
         font-size: 14px;
+        margin-left: 9px;
+        position: relative;
+        top: -10px;
+        line-height: 20px;
     }
     .btn {
         width: 92px;
@@ -941,6 +951,23 @@
     }
     .top-casinos-play a {
         margin-bottom: 1px;
+    }
+    .top-casinos__item {
+        padding-top: 14px;
+    }
+    .top-casinos-compare{
+        margin-right: 12px;
+    }
+    .top-casinos-play {
+        position: absolute;
+        top: 32px;
+        right: -27px;
+    }
+    .show-desktop1{
+        display: inline-block;
+    }
+    .show-desktop2{
+        display: none;
     }
     /* --------------- /top-casinos --------------- */
 }
@@ -994,4 +1021,90 @@
         height: 311px;
         margin: 0 7px 29px 7px;
     }
+
+    /* --------------- top-casinos --------------- */
+    .top-casinos-games{
+        padding-left: 12px;
+        padding-top: 0;
+    }
+    .top-casinos-number {
+        width: 20px;
+    }
+    .top-casinos__head {
+        padding-top: 29px;
+    }
+    .top-casinos-country {
+        width: 153px;
+    }
+    .top-casinos-casino {
+        width: 160px;
+    }
+    .show-desktop1{
+        display: none;
+    }
+    .show-desktop2{
+        display: inline-block;
+    }
+    .top-casinos-bonus {
+        width: 86px;
+    }
+    .top-casinos-os {
+        width: 261px;
+    }
+    .top-casinos__item>div:first-child >span {
+        margin-right: 18px;
+    }
+    .country-flags {
+        margin-right: 33px;
+    }
+    .top-casinos__item-logo>h3 {
+        display: inline-block;
+        position: relative;
+        left: -27px;
+        top: 2px;
+    }
+    .top-casinos__item-logo {
+        width: 225px;
+        margin-right: 0px;
+    }
+    .top-casinos__item-logo img {
+        position: relative;
+        top: 12px;
+        margin-right: 0;
+    }
+    .top-casinos__rating {
+        margin-left: 1px;
+        margin-top: 2px;
+    }
+    .top-casinos__score-count{
+        display: inline-block;
+        font-size: 14px;
+        position: relative;
+        top: 4px;
+    }
+    .top-casinos-bonus-1 {
+        position: relative;
+        top: 2px;
+    }
+    .systems {
+        width: 135px;
+        top: -1px;
+        left: -10px;
+        margin-right: 3px;
+    }
+    .systems img{
+        display: inline-block;
+    }
+    .top-casinos-compare {
+        margin-right: 24px;
+    }
+    .top-casinos-software {
+        margin-left: 9px;
+        top: 6px;
+        left: 3px;
+    }
+    .top-casinos-play {
+        top: 24px;
+    }
+    /* --------------- /top-casinos --------------- */
 }
