@@ -229,6 +229,13 @@
     .site__content__wrap {
         width: 913px;
     }
+    .site__content__item {
+        padding: 13px 30px 120px 30px;
+    }
+    .site__title {
+        font-size: 25px;
+        padding-top: 21px;
+    }
     .site__header {
         height: 197px;
         background-size: 100% 100%;

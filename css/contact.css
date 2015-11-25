@@ -100,6 +100,15 @@
     padding-left: 18px;
     font-size: 12px;
 }
+.contact-us .star{
+    position: absolute;
+    font-size: 12px;
+    color: #c74141;
+    left:10px;
+}
+.contact-us fieldset input[type="text"]:focus label{
+    opacity: 0;
+}
 .required>span:nth-child(1){
     color:#9e0039;
 }
@@ -368,7 +377,24 @@
 @media (min-width: 1150px) {
 
     /* --------------- contact --------------- */
-
+    .contact-field {
+        margin-right: 15px;
+        font-size: 15px;
+    }
+    .required {
+        width: 345px;
+    }
+    .contact-us fieldset .captcha input[type="text"] {
+        width: 499px;
+    }
+    .contact-us .submit {
+        margin-top: 40px;
+        margin-right: 2px;
+    }
+    .contact-us:after {
+        bottom: -113px;
+        right: 131px;
+    }
     /* --------------- /contact --------------- */
 
     /* --------------- social --------------- */
