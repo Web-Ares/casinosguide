@@ -1,24 +1,27 @@
 
 /* --------------- placeholder --------------- */
 ::-webkit-input-placeholder {
-    color: #a1a1a1;
+    color: #eaeceb;
+    -webkit-transition: color 300ms ease-in-out;
 }
-::-moz-placeholder {
-    color: #a1a1a1;
+:-moz-placeholder {
+    color: #eaeceb;
+    -webkit-transition: color 300ms ease-in-out;
+    transition: color 300ms ease-in-out;
 }
 .placeholder {
-    color: #a1a1a1;
+    color: #eaeceb;
+    -webkit-transition: color 300ms ease-in-out;
+    transition: color 300ms ease-in-out;
 }
-.placeholder:after {
-    content: "*";
-    position: absolute;
-    font-size: 14px;
-    color: #c74141;
-    right: -9px;
-    top: -1px;
-}
+:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder          {color: transparent}
+:focus:-moz-placeholder           {color: transparent}
+:focus:-ms-input-placeholder      {color: transparent}
 /* --------------- /placeholder --------------- */
-
+.site__title span:last-child{
+    display: none;
+}
 /* --------------- contact --------------- */
 .contact-us{
     position: relative;
@@ -27,6 +30,7 @@
     padding: 5px 0 16px 0;
 }
 .contact-us fieldset {
+    position: relative;
     display: block;
     vertical-align: top;
 }
@@ -100,13 +104,30 @@
     padding-left: 18px;
     font-size: 12px;
 }
-.contact-us .star{
+.contact-us fieldset label {
     position: absolute;
+    top: 0;
     font-size: 12px;
-    color: #c74141;
-    left:10px;
+    line-height: 16px;
+    color: #c4c4c4;
+    padding-left: 8px;
+    opacity: 1;
+    -webkit-transition: opacity .3s ease-in-out;
+    transition: opacity .3s ease-in-out;
+    cursor: text;
 }
-.contact-us fieldset input[type="text"]:focus label{
+.contact-us fieldset label:after{
+    content: '*';
+    position: relative;
+    font-size: 14px;
+    top: 2px;
+    margin-left: 3px;
+    color: #c74141;
+}
+.contact-us fieldset input:focus + label {
+    opacity: 0;
+}
+.contact-us fieldset textarea:focus + label {
     opacity: 0;
 }
 .required>span:nth-child(1){
@@ -153,6 +174,9 @@
     border-bottom: 1px solid #727272;
     padding-bottom: 9px;
     margin-bottom: 4px;
+}
+input, textarea, input[type="search"]:focus, :focus {
+    outline: none;
 }
 /* --------------- /contact --------------- */
 
@@ -218,7 +242,12 @@
 /* --------------- /social --------------- */
 
 @media (min-width: 768px) {
-
+    .site__title span:first-child{
+        display: none;
+    }
+    .site__title span:last-child{
+        display: block;
+    }
     /* --------------- contact --------------- */
     .contact-hours {
         padding-bottom: 13px;
@@ -262,6 +291,9 @@
     .contact-us:after {
         bottom: -17px;
         right: 172px;
+    }
+    .contact-us fieldset label {
+        line-height: 23px;
     }
     /* --------------- /contact --------------- */
 }
@@ -336,6 +368,11 @@
         font-size: 17px;
         top: -4px;
     }
+    .contact-us fieldset label {
+        font-size: 15px;
+        line-height: 32px;
+        padding-left: 17px;
+    }
     /* --------------- /contact --------------- */
 
     /* --------------- social --------------- */
@@ -395,10 +432,15 @@
         bottom: -113px;
         right: 131px;
     }
+    .contact-us fieldset label {
+        font-size: 15px;
+        line-height: 38px;
+        padding-left: 13px;
+    }
+    .contact-us fieldset label:after {
+        font-size: 16px;
+        top: -2px;
+        margin-left: 8px;
+    }
     /* --------------- /contact --------------- */
-
-    /* --------------- social --------------- */
-
-    /* --------------- /social --------------- */
-
 }
