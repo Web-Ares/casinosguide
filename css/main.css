@@ -63,11 +63,10 @@
 /* --------------- /fonts --------------- */
 
 /* --------------- site --------------- */
-.site__content__wrap {
+.site__content__section {
     position: relative;
     width: 304px;
     margin-bottom: 8px;
-    margin-left: 100px;
 }
 .site__content__item{
     position: relative;
@@ -627,10 +626,12 @@
 @media (min-width: 768px) {
 
     /* --------------- site --------------- */
-    .site__content__wrap {
+    .site__content__section {
         width: 726px;
-        margin: 0 auto;
         margin-top: 13px;
+    }
+    .site__content__wrap {
+        margin: 0 auto;
     }
     .site__content__item {
         padding: 12px 20px 20px 10px;
@@ -853,9 +854,10 @@
     .follow-us__item {
         width: 374px;
         height: 322px;
-        margin: 0 7px 21px 7px;
+        margin: 0 6px 21px 6px;
     }
     .follow-us {
+        width: 800px;
         margin-bottom: 7px;
     }
     .follow-us__title {
@@ -1098,7 +1100,7 @@
 @media (min-width: 1150px) {
 
     /* --------------- site --------------- */
-    .site__content__wrap {
+    .site__content__section {
         width: 913px;
     }
     .site__content__item {
@@ -1131,6 +1133,9 @@
         height: 176px;
     }
     /* --------------- /logo --------------- */
+    .follow-us{
+        width: 916px;
+    }
     .follow-us__title {
         margin-bottom: 18px;
     }
@@ -1143,9 +1148,14 @@
     .follow-us__item {
         width: 216px;
         height: 311px;
-        margin: 0 7px 29px 7px;
+        margin: 0 6px 29px 6px;
     }
-
+    .follow-us__wrap .follow-us__item:first-child{
+        margin-left: 0;
+    }
+    .follow-us__wrap .follow-us__item:last-child{
+        margin-right: 0;
+    }
     /* --------------- last-comments --------------- */
     .last-comments {
         padding-top: 14px;
