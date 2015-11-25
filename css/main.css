@@ -54,6 +54,12 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: "helvetica italic";
+    src: url("../fonts/helveticaneueltstd-it.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
 /* --------------- /fonts --------------- */
 
 /* --------------- site --------------- */
@@ -115,40 +121,59 @@
 }
 .site__header-search{
     display: none;
+    position: absolute;
+    width: 195px;
+    top: 0;
+    right: 206px;
+}
+.site__header-search:after{
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 19px;
+    background: url("../img/search-bg.png") no-repeat;
+    background-size: cover;
+    width: 213px;
+    height: 64px;
+}
+.site__header-search>div{
+    padding: 30px 0 32px;
     position: relative;
-    width: 197px;
-    padding: 55px 0 100px;
+    z-index: 1;
 }
 .site__header-search h2{
     font-family: "ChunkFive", sans-serif;
     font-weight: normal;
-    font-size: 50px;
-    line-height: 50px;
+    font-size: 25px;
+    line-height: 25px;
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 17px;
+    top: 7px;
     color: #000;
+    text-transform: uppercase;
+    text-shadow: 0 3px 0 #dc462d;
 }
 .site__header-search-name{
     font-family: "Lato Heavy", sans-serif;
     font-weight: normal;
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 10.5px;
+    line-height: 10.5px;
     position: absolute;
-    right: 0;
-    bottom: 30px;
+    right: 20px;
+    bottom: 23px;
     color: #e62e2e;
     text-transform: uppercase;
 }
 .site__header-search-year{
     font-family: "ChunkFive", sans-serif;
     font-weight: normal;
-    font-size: 50px;
-    line-height: 50px;
+    font-size: 26px;
+    line-height: 26px;
     position: absolute;
-    right: 0;
+    right: 25px;
     bottom: 0;
     color: #e62e2e;
+    text-shadow: 0 3px 0 #000;
 }
 .site__header-search fieldset{
     position: relative;
@@ -158,6 +183,10 @@
     border: 2px solid #e62e2e;
     height: 27px;
     width: 100%;
+    font-family: "helvetica italic", sans-serif;
+    font-size: 12px;
+    line-height: 12px;
+    padding: 5px 29px 5px 7px;
 }
 .site__header-search button{
     background: url("../img/search.png") no-repeat;
@@ -165,9 +194,9 @@
     background-size: cover;
     position: absolute;
     right: 10px;
-    top: 3px;
-    width: 17px;
-    height: 17px;
+    top: 4px;
+    width: 16px;
+    height: 16px;
     text-indent: -9999px;
     padding: 0;
 }
@@ -483,26 +512,35 @@
         margin: 0 auto;
     }
     .site__header-search{
-        width: 300px;
-        height: 55px;
-        padding: 55px 0 100px;
+        width: 391px;
+        top: 5px;
+        right: 37px;
+    }
+    .site__header-search:after {
+        left: -11px;
+        top: 35px;
+        width: 426px;
+        height: 127px;
+    }
+    .site__header-search>div{
+        padding: 55px 0 62px;
     }
     .site__header-search h2{
         font-size: 50px;
         line-height: 50px;
-        right: 0;
-        top: 0;
+        right: 36px;
+        top: 11px;
     }
     .site__header-search-name{
         font-size: 20px;
         line-height: 20px;
-        right: 0;
-        bottom: 30px;
+        right: 48px;
+        bottom: 45px;
     }
     .site__header-search-year{
         font-size: 50px;
         line-height: 50px;
-        right: 0;
+        right: 52px;
         bottom: 0;
     }
     .site__header-search fieldset{
@@ -510,10 +548,13 @@
     .site__header-search input{
         border: 3px solid #e62e2e;
         height: 55px;
+        font-size: 18px;
+        line-height: 18px;
+        padding: 15px 59px 15px 18px;
     }
     .site__header-search button{
-        right: 0;
-        top: 0;
+        right: 17px;
+        top: 7px;
         width: 36px;
         height: 35px;
     }
@@ -569,6 +610,9 @@
     }
     .site__header>div{
         width: 1150px;
+    }
+    .site__header-search{
+        right: 133px;
     }
     /* --------------- /site --------------- */
 
