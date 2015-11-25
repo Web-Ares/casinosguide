@@ -66,14 +66,14 @@
 .site__content__wrap {
     position: relative;
     width: 304px;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
     margin-left: 100px;
 }
 .site__content__item{
     position: relative;
     width: 100%;
     margin: 0 auto;
-    padding: 0 10px 20px 10px;
+    padding: 0px 10px 10px 10px;
     border-right: 1px solid #dbdbdb;
     border-left: 1px solid #dbdbdb;
     border-bottom: 3px solid #dbdbdb;
@@ -491,7 +491,6 @@
     font-size: 12px;
     font-weight: 700;
     margin-bottom: 2px;
-    padding-top: 32px;
     overflow: hidden;
     text-shadow: 0 2px 3px #dc462d;
     text-transform: uppercase;
@@ -543,26 +542,36 @@
     height: 100%;
 }
 /* --------------- /follow-us --------------- */
+
+/* --------------- last-comments --------------- */
 .last-comments{
     font-size: 12px;
 }
 .last-comments__name{
-    line-height: 24px;
+    line-height: 27px;
     color:#dc462d;
 }
 .last-comments__week{
     color:#bfbfbf;
     display: block;
     font-size: 10px;
+    margin-top: -5px;
+    margin-bottom: 8px;
 }
 .last-comments__item{
     position: relative;
-    margin-left: 70px;
+    margin-left: 38px;
+    margin-bottom: 9px;
+}
+
+.last-comments__item:last-child{
+    margin-bottom: 0;
 }
 .last-comments__item:before{
     content: "";
     position: absolute;
-    left: -50px;
+    top: -4px;
+    left: -39px;
     width: 26px;
     height: 40px;
     background: url("../img/social.png") no-repeat center;
@@ -573,8 +582,8 @@
 .last-comments__item:after{
     content: "";
     position: absolute;
-    left: -45px;
-    top: 18px;
+    left: -34px;
+    top: 15px;
     width: 16px;
     height:20px;
     background: url("../img/socia-people.png") no-repeat center;
@@ -591,18 +600,27 @@
     height: 8px;
     background-size: 9px 7px;
 }
-.last-comments__item p{
+.last-comments__score p{
+    font-family: "Lato Semibold", sans-serif;
     display: inline;
+    margin-left: 10px;
 }
-.last-comments__score{
-    margin-top: 5px;
-    display: inline-block;
-    vertical-align: middle;
+.last-comments__score {
+    max-height: 36px;
+    overflow: hidden;
 }
 .last-comments_flag{
     top: 1px;
+    margin-left: 5px;
 }
-/* --------------- last-comments --------------- */
+.last-comments .top-casinos__score-count {
+    margin-left: 13px;
+    vertical-align: middle;
+}
+.last-comments .top-casinos__rating {
+    margin: 0 0 2px;
+    vertical-align: bottom;
+}
 
 /* --------------- /last-comments --------------- */
 
@@ -612,6 +630,7 @@
     .site__content__wrap {
         width: 726px;
         margin: 0 auto;
+        margin-top: 13px;
     }
     .site__content__item {
         padding: 12px 20px 20px 10px;
@@ -698,15 +717,42 @@
     }
     /* --------------- /top-casinos --------------- */
 
+    /* --------------- last-comments --------------- */
+    .last-comments__item {
+        margin-left: 45px;
+        margin-bottom: 15px;
+        margin-top: -3px;
+    }
+    .last-comments__week {
+        margin-top: -9px;
+        margin-bottom: 6px;
+    }
+    .last-comments__score p {
+        margin-left: 8px;
+    }
+    .last-comments__name {
+        line-height: 30px;
+    }
+    .last-comments__item:before {
+        top: -9px;
+        left: -44px;
+    }
+    .last-comments__item:after {
+        top: 10px;
+        left: -39px;
+    }
+    /* --------------- /last-comments --------------- */
 }
 @media (min-width: 960px) {
 
     /* --------------- site --------------- */
     .site__content__wrap {
         width: 763px;
+        margin-top: 0;
     }
     .site__content__item {
-        padding: 0 30px 100px 23px;
+        padding: 0 30px 0 23px;
+        margin-bottom: 31px;
     }
     .site__title {
         height: 65px;
@@ -815,6 +861,7 @@
     .follow-us__title {
         font-size: 24px;
         margin-bottom: 24px;
+        padding-top: 26px;
     }
     .follow-us__title span:before {
         top: 14px;
@@ -943,6 +990,83 @@
         margin-bottom: 1px;
     }
     /* --------------- /top-casinos --------------- */
+
+    /* --------------- last-comments --------------- */
+    .last-comments__item {
+        margin-left: 83px;
+        margin-bottom: 26px;
+    }
+    .last-comments__name {
+        line-height: 30px;
+        font-size: 16px;
+    }
+    span.last-comments__flag {
+        font-size: 15px;
+        margin-left: 3px;
+    }
+    .last-comments_flag {
+        margin-left: 9px;
+    }
+    .last-comments__week {
+        margin-top: -3px;
+        font-size: 13px;
+        margin-bottom: 6px;
+    }
+    .last-comments .top-casinos__rating {
+        margin: 0 0 3px;
+        vertical-align: bottom;
+        background-size: 18px 14px;
+        width: 88px;
+        height: 14px;
+    }
+    .last-comments__score .top-casinos__rating > div {
+        height: 14px;
+        background-size: 18px 14px;
+    }
+    .last-comments__week {
+        margin-top: -3px;
+        font-size: 13px;
+        margin-bottom: 18px;
+    }
+    .last-comments__score p {
+        margin-left: 8px;
+        font-size: 14px;
+    }
+    .last-comments .top-casinos__score-count {
+        margin-left: 8px;
+        vertical-align: top;
+        font-size: 14px;
+        padding-top: 1px;
+    }
+    .last-comments__score {
+        max-height: 100%;
+        overflow: visible;
+    }
+    .last-comments_flag {
+        margin-top: 2px;
+    }
+    .last-comments__score p {
+        margin-left: 16px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .last-comments__item:before {
+        top: -30px;
+        left: -76px;
+        width: 41px;
+        height: 62px;
+    }
+    .last-comments__item:after {
+        top: -5px;
+        left: -67px;
+        width: 23px;
+        height: 36px;
+    }
+    .last-comments {
+        padding-top: 28px;
+        padding-bottom: 29px;
+    }
+    /* --------------- /last-comments --------------- */
 }
 @media (min-width: 1150px) {
 
@@ -951,7 +1075,7 @@
         width: 913px;
     }
     .site__content__item {
-        padding: 13px 30px 120px 30px;
+        padding: 13px 30px 0 30px;
     }
     .site__title {
         font-size: 25px;
@@ -994,4 +1118,20 @@
         height: 311px;
         margin: 0 7px 29px 7px;
     }
+
+    /* --------------- last-comments --------------- */
+    .last-comments {
+        padding-top: 14px;
+    }
+    .last-comments__item {
+        margin-left: 75px;
+        margin-bottom: 45px;
+    }
+    .last-comments {
+        padding-bottom: 23px;
+    }
+    .follow-us__title {
+        padding-top: 1px;
+    }
+    /* --------------- /last-comments --------------- */
 }
