@@ -158,6 +158,67 @@
 }
 /* --------------- /top-casinos --------------- */
 
+/* --------------- follow-us --------------- */
+.follow-us__title {
+    font-family: "Lato Heavy", sans-serif;
+    position: relative;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 2px;
+    padding-top: 32px;
+    overflow: hidden;
+    text-shadow: 0 2px 3px #dc462d;
+    text-transform: uppercase;
+}
+.follow-us__title span {
+    position: relative;
+    line-height: 30px;
+}
+.follow-us__title span:before {
+    content: "";
+    position: absolute;
+    width: 1000px;
+    top: 8px;
+    height: 1px;
+    right: 100%;
+    margin-right: 6px;
+    background: #cb0101;
+}
+.follow-us__title span:after {
+    content: "";
+    position: absolute;
+    width: 1000px;
+    top: 8px;
+    height: 1px;
+    left: 100%;
+    margin-left: 6px;
+    background: #cb0101;
+}
+
+.follow-us{
+    position: relative;
+    max-width: 934px;
+    margin-bottom: 21px;
+    padding: 0 2px;
+}
+.follow-us__wrap{
+    display: block;
+    text-align: center;
+}
+.follow-us__item{
+    width: 151px;
+    height: 155.5px;
+    display: inline-block;
+    margin: 0 2px 8px 2px;
+    vertical-align: top;
+}
+.follow-us__pic{
+   width: 100%;
+    height: 100%;
+}
+/* --------------- /follow-us --------------- */
+
 @media (min-width: 768px) {
 
     /* --------------- site --------------- */
@@ -185,6 +246,17 @@
         margin-left: 0;
     }
     /* --------------- /logo --------------- */
+
+    /* --------------- follow-us --------------- */
+    .follow-us__item {
+        width: 176px;
+        height: 161px;
+        margin: 0 3px 8px 3px;
+    }
+    .follow-us__title {
+        font-size: 13px;
+    }
+    /* --------------- /follow-us --------------- */
 
 }
 @media (min-width: 960px) {
@@ -222,6 +294,26 @@
     }
     /* --------------- /logo --------------- */
 
+    /* --------------- follow-us --------------- */
+    .follow-us__item {
+        width: 374px;
+        height: 322px;
+        margin: 0 7px 21px 7px;
+    }
+    .follow-us {
+        margin-bottom: 7px;
+    }
+    .follow-us__title {
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+    .follow-us__title span:before {
+        top: 14px;
+    }
+    .follow-us__title span:after {
+        top: 14px;
+    }
+    /* --------------- /follow-us --------------- */
 }
 @media (min-width: 1150px) {
 
@@ -253,5 +345,18 @@
         height: 176px;
     }
     /* --------------- /logo --------------- */
-
+    .follow-us__title {
+        margin-bottom: 18px;
+    }
+    .follow-us__title span:before {
+        top: 16px;
+    }
+    .follow-us__title span:after {
+        top: 16px;
+    }
+    .follow-us__item {
+        width: 216px;
+        height: 311px;
+        margin: 0 7px 29px 7px;
+    }
 }

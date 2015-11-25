@@ -1,36 +1,59 @@
-$(function(){
+(function(){
 
-} );
+        $.each( $('.text-label'), function(){
+            new InputVal ( $(this) );
+        } );
 
-var Shablon = function (obj) {
-    this.obj = obj;
+    var InputVal = function (obj) {
 
+        var _obj = obj,
+            _input = _obj.find('input');
 
-    this.init();
-};
-Shablon.prototype = {
-    init: function () {
-        var self = this;
+        var _addEvents = function () {
 
-        self.core = self.core();
-        self.core.build();
-    },
-    core: function () {
-        var self = this;
+                _input.on({
+                    keyup: function(){
 
-        return {
-            addEvents: function () {
+                        var curInput = $(this),
+                            curLabel = curInput.next('label');
 
+                        if (!curInput.val()==0) {
+                            curLabel.css({
+                                'opacity': 0
+                            })
+                        }else{
+                            curLabel.css({
+                                'opacity': 1
+                            })
+                        }
+                    }
+                });
+
+                _input.on({
+                    focusout: function(){
+
+                        var curInput = $(this),
+                            curLabel = curInput.next('label');
+
+                        if (!curInput.val()==0) {
+                            curLabel.css({
+                                'opacity': 0
+                            })
+                        }else{
+                            curLabel.css({
+                                'opacity': 1
+                            })
+                        }
+                    }
+                });
             },
-            build: function () {
-                self.core.addEvents();
-            }
-        };
-    }
-};
 
-$(window).on({
-    load: function () {
-        
-    }
-});
+            _init = function () {
+                _addEvents();
+            };
+
+        _init();
+    };
+
+  
+})();
