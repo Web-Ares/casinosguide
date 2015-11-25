@@ -322,6 +322,7 @@
     }
     .contact-us {
         margin-top: 49px;
+        padding-bottom: 100px;
     }
     .contact-us fieldset input[type='text'],
     .contact-us fieldset input[type='email'],
@@ -360,7 +361,7 @@
         padding-top: 4px;
     }
     .contact-us:after {
-        bottom: -108px;
+        bottom: 0px;
         right: 127px;
         width: 80px;
         height: 100px;
@@ -430,7 +431,6 @@
         margin-right: 2px;
     }
     .contact-us:after {
-        bottom: -113px;
         right: 131px;
     }
     .contact-us fieldset label {
