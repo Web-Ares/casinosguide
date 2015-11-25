@@ -57,6 +57,20 @@
 /* --------------- /fonts --------------- */
 
 /* --------------- site --------------- */
+.site__content__wrap {
+    position: relative;
+    width: 304px;
+    margin-bottom: 20px;
+}
+.site__content__item{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px 20px 10px;
+    border-right: 1px solid #dbdbdb;
+    border-left: 1px solid #dbdbdb;
+    border-bottom: 3px solid #dbdbdb;
+}
 .site__title {
     position: relative;
     width: 100%;
@@ -147,6 +161,12 @@
 @media (min-width: 768px) {
 
     /* --------------- site --------------- */
+    .site__content__wrap {
+        width: 726px;
+    }
+    .site__content__item {
+        padding: 12px 20px 20px 10px;
+    }
     .site__title {
         margin-bottom: 0;
     }
@@ -170,6 +190,12 @@
 @media (min-width: 960px) {
 
     /* --------------- site --------------- */
+    .site__content__wrap {
+        width: 763px;
+    }
+    .site__content__item {
+        padding: 0 30px 100px 23px;
+    }
     .site__title {
         height: 65px;
         font-size: 19px;
@@ -200,6 +226,9 @@
 @media (min-width: 1150px) {
 
     /* --------------- site --------------- */
+    .site__content__wrap {
+        width: 913px;
+    }
     .site__header {
         height: 197px;
         background-size: 100% 100%;
