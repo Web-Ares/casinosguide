@@ -444,6 +444,68 @@
     height: 100%;
 }
 /* --------------- /follow-us --------------- */
+.last-comments{
+    font-size: 12px;
+}
+.last-comments__name{
+    line-height: 24px;
+    color:#dc462d;
+}
+.last-comments__week{
+    color:#bfbfbf;
+    display: block;
+    font-size: 10px;
+}
+.last-comments__item{
+    position: relative;
+    margin-left: 70px;
+}
+.last-comments__item:before{
+    content: "";
+    position: absolute;
+    left: -50px;
+    width: 26px;
+    height: 40px;
+    background: url("../img/social.png") no-repeat center;
+    background-size: contain;
+    margin: 0 1px;
+    z-index: 2;
+}
+.last-comments__item:after{
+    content: "";
+    position: absolute;
+    left: -45px;
+    top: 18px;
+    width: 16px;
+    height:20px;
+    background: url("../img/socia-people.png") no-repeat center;
+    background-size: contain;
+    margin: 0 1px;
+    z-index: 2;
+}
+.last-comments__score .top-casinos__rating > div {
+    background: url("../img/score3.png") repeat-x top left;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 8px;
+    background-size: 9px 7px;
+}
+.last-comments__item p{
+    display: inline;
+}
+.last-comments__score{
+    margin-top: 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.last-comments_flag{
+    top: 1px;
+}
+/* --------------- last-comments --------------- */
+
+/* --------------- /last-comments --------------- */
 
 @media (min-width: 768px) {
 
