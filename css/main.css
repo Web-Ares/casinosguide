@@ -836,9 +836,12 @@
     }
     .review__list .review-play {
         position: absolute;
-        right: -15px;
-        top: 11px;
-
+        left: auto;
+        right: -34px;
+        top: -2px;
+    }
+    .review__list{
+        position: relative;
     }
     /* --------------- /review --------------- */
 
@@ -1180,6 +1183,62 @@
     }
     /* --------------- /top-casinos --------------- */
 
+    /* --------------- review --------------- */
+
+    .review-est img {
+        height: 95px;
+    }
+    .review__list .review-est {
+        float: left;
+        margin-right: 47px;
+    }
+    .review-logo img {
+        height: 91px;
+    }
+    .review__list {
+        position: relative;
+        padding-top: 14px;
+    }
+    .review-section{
+        padding: 0 11px;
+    }
+    .review .country-flags span {
+        padding-top: 33px;
+        margin-left: -36px;
+        font-size: 14px;
+        width: 100px;
+        line-height: 19px;
+    }
+    .review .country-flags {
+        float: left;
+        position: relative;
+        top: 10px;
+        margin-right: 56px;
+    }
+    .review-logo {
+        position: relative;
+        top: 7px;
+    }
+    .review-play .btn, .review-play .btn_rev {
+        width: 143px;
+        height: 43px;
+        margin-bottom: 7px;
+        padding-top: 13px;
+    }
+    .review-play .btn_rev{
+        background: #e8e3e3;
+         color: #464648;
+        font-size: 14px;
+    }
+    .review__list .review-play {
+        right: -15px;
+        top: 12px;
+    }
+    .review__list {
+        padding-bottom: 10px;
+    }
+    /* --------------- /review --------------- */
+
     /* --------------- last-comments --------------- */
     .last-comments__item {
         margin-left: 83px;
@@ -1443,5 +1502,30 @@
     .top-casinos-software {
         margin-left: 9px;
         top: 6px;}
+    /* --------------- /top-casinos --------------- */
+    /* --------------- review --------------- */
+    .review-est img {
+        height: 110px;
+    }
+    .review-section {
+        padding: 0 16px;
+    }
+    .review .country-flags {
+        margin-right: 108px;
+    }
+    .review-play .btn, .review-play .btn_rev {
+        width: 280px;
+        height: 43px;
+        margin-bottom: 8px;
+        padding-top: 13px;
+    }
+    .review__list .review-play {
+        right: -24px;
+        top: 20px;
+    }
+    .review-play .btn_rev:hover{
+        background-color: #efdada;
+    }
+    /* --------------- /review --------------- */
 }
     
