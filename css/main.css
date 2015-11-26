@@ -626,6 +626,7 @@
     font-family: "Lato Semibold", sans-serif;
     display: inline;
     margin-left: 10px;
+    line-height: 12px;
 }
 .last-comments__score {
     max-height: 36px;
@@ -1030,6 +1031,9 @@ p{
         height: 65px;
         font-size: 19px;
         padding-top: 27px;
+    }
+    .site__content .site__content__text{
+        max-width: 763px;
     }
     .site__header {
         height: 183px;
@@ -1562,6 +1566,9 @@ p{
         font-size: 25px;
         padding-top: 21px;
     }
+    .site__content .site__content__text{
+        max-width: 913px;
+    }
     .site__header {
         height: 197px;
         background-size: 100% 100%;
@@ -1736,5 +1743,48 @@ p{
     .top-casinos-software {
         margin-left: 9px;
         top: 6px;}
+
+    /* --------------- compare  --------------- */
+    .compare__item {
+        width: 215px;
+        padding-bottom: 8px;
+    }
+    .compare .compare__item:nth-child(5) {
+        display: table-cell;
+    }
+    .compare .compare__item:nth-child(4) {
+        display: table-cell;
+    }
+    .compare_item {
+        padding: 0;
+    }
+    .compare__item_space {
+        width: 19px;
+    }
+    .compare__characteristics dd {
+        width: 112px;
+    }
+    .compare__characteristics .compare-soft{
+        width: 100%;
+        margin-bottom: 27px;
+
+    }
+    .compare__characteristics .micro{
+        width: 100%;
+        margin-top: -22px;
+        margin-left: 9px;
+        margin-bottom: 0px;
+    }
+    .compare__characteristics .display-change-operating{
+        width: 100%;
+        margin-bottom: 27px;
+    }
+    .compare__characteristics .systems {
+        width: 100%;
+        margin-top: -22px;
+        left: 9px;
+        margin-bottom: 0px;
+    }
+    /* --------------- /compare  --------------- */
 }
     
