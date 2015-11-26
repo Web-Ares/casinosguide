@@ -474,9 +474,59 @@
 }
 /* --------------- /top-casinos --------------- */
 
+/* --------------- review --------------- */
+.review .country-flags{
+    margin-left: 2px;
+    margin-right: 0;
+    vertical-align: top;
+}
+.review .country-flags span{
+    display: inline-block;
+    width: 81px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 32px;
+    margin-left: -26px;
+}
+.review__list{
+    padding-top: 8px;
+    padding-bottom: 82px;
+}
+.review__list li{
+    display: inline-block;
+    margin-right: 22px;
+    vertical-align: middle;
+}
+.review__list li>img{
+
+}
+.review-est img{
+    height: 55px;
+}
+.review-logo img{
+    height: 44px;
+}
+.review-play{
+    position: absolute;
+    bottom: 23px;
+    left: 50%;
+    margin-left: -67px;
+}
+.review-play a{
+    display: block;
+}
+.review-play .btn, .review-play .btn_rev{
+    width: 140px;
+    height: 20px;
+    margin-bottom: 7px;
+}
+/* --------------- /review --------------- */
+
 /* --------------- btn --------------- */
 .btn{
     width: 100px;
+    position: relative;
     text-align: center;
     padding-top: 3px;
     border-radius: 4px;
@@ -500,6 +550,12 @@
 }
 .btn_rev:hover{
     background-color: #efdada;
+}
+.btn>span:after{
+    content: " >>";
+    position: absolute;
+    color: #fff;
+    margin-left: 2px;
 }
 /* --------------- /btn --------------- */
 
@@ -756,6 +812,35 @@
         bottom: -20px;
     }
     /* --------------- /top-casinos --------------- */
+
+    /* --------------- review --------------- */
+    .review-logo{
+
+    }
+    .review__list .review-est{
+        float: left;
+        margin-right: 97px;
+    }
+    .review .country-flags{
+        float: left;
+        margin-right: 102px;
+    }
+    .review__list{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .review .country-flags span {
+        width: 170px;
+        padding-top: 24px;
+        margin-left: -75px;
+    }
+    .review__list .review-play {
+        position: absolute;
+        right: -15px;
+        top: 11px;
+
+    }
+    /* --------------- /review --------------- */
 
     /* --------------- last-comments --------------- */
     .last-comments__item {
