@@ -490,8 +490,9 @@
     margin-left: -26px;
 }
 .review__list{
+    position: relative;
     padding-top: 8px;
-    padding-bottom: 82px;
+    padding-bottom: 78px;
 }
 .review__list li{
     display: inline-block;
@@ -509,7 +510,7 @@
 }
 .review-play{
     position: absolute;
-    bottom: 23px;
+    bottom: 8px;
     left: 50%;
     margin-left: -67px;
 }
@@ -520,6 +521,45 @@
     width: 140px;
     height: 20px;
     margin-bottom: 7px;
+}
+.review__rank{
+    left: -11px;
+    width: 303px;
+    position: relative;
+    background: url(../img/title_bg.png);
+    padding-top: 19px;
+}
+.review__rank-title{
+    font-size: 12px;
+    text-transform: uppercase;
+    background-color: #f2f0f0;
+    padding: 5px;
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    text-align: center;
+    display: block;
+    width: 164px;
+    margin: 0 auto;
+    font-weight: bold;
+    position: relative;
+    left: 3px;
+    margin-bottom: 23px;
+}
+.review__rank-rating-item span{
+    color: #dc462d;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+}
+.review__rank-rating-item  .social__item{
+    background: url("../img/social1.png") no-repeat center;
+    background-size: contain;
+    text-align: center;
+    padding-top: 20px;
+    color: #76a612;
+}
+.review__rank-rating-item  .social__item:before{
+    content: "";
 }
 /* --------------- /review --------------- */
 
