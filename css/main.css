@@ -249,6 +249,7 @@
     overflow: hidden !important;
 }
 .site__aside-menu{
+    display: none;
     border: 1px solid #dddddd;
     border-bottom: 4px solid #dddddd;
     margin: 0 0 11px;
@@ -512,7 +513,7 @@
     font-weight: 700;
     margin-bottom: 2px;
     overflow: hidden;
-    text-shadow: 0 2px 3px #dc462d;
+    text-shadow: 0 2px 0 #dc462d;
     text-transform: uppercase;
 }
 .follow-us__title span {
@@ -551,7 +552,7 @@
     text-align: center;
 }
 .follow-us__item{
-    width: 151px;
+    width: 144px;
     height: 155.5px;
     display: inline-block;
     margin: 0 2px 8px 2px;
@@ -641,8 +642,178 @@
     margin: 0 0 2px;
     vertical-align: bottom;
 }
-
 /* --------------- /last-comments --------------- */
+.compare_item{
+    padding: 0px 0 10px 0;
+    border: none;
+}
+.compare{
+    font-size: 12px;
+    display: table;
+    margin-top: 10px;
+    margin-bottom: 17px;
+}
+.compare__item{
+    position: relative;
+    display: none;
+    vertical-align: top;
+    width: 150px;
+    border-top: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+    border-left: 1px solid #ebebeb;
+    border-bottom: 3px solid #ebebeb;
+}
+.compare__item_space{
+    width: 8px;
+    border:none;
+}
+.compare__logo{
+    width: 100%;
+    height: 45px;
+    background: #ebebeb url("../img/casino-gates.png") no-repeat center;
+    background-size: 40px 40px;
+    margin-bottom: 8px;
+}
+.compare__title{
+    font-family: "Lato Heavy", sans-serif;
+    position: relative;
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: -5px;
+    z-index: 4;
+}
+.compare__rating{
+    text-align: center;
+    margin-bottom: 16px;
+    margin-left: -11px;
+}
+.compare__sore{
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+    width: 26px;
+    height: 40px;
+    background: url("../img/social.png") no-repeat center;
+    background-size: contain;
+    margin: 0 11px;
+    z-index: 2;
+}
+.compare__sore span{
+    font-family: "Lato Heavy", sans-serif;
+    font-size: 12px;
+    color: #76a612;
+    display: inline-block;
+    margin-top: 23px;
+    margin-left: 2px;
+}
+.compare__characteristics{
+    display: block;
+    margin-left: 4px;
+    font-size: 12px;
+}
+.compare__characteristics dt{
+    font-size: 12px;
+}
+.compare__characteristics dd{
+    width: 65px;
+    color: #3b3537;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 9px;
+}
+.compare__characteristics .micro{
+    color:#dc462d;
+}
+.compare__add{
+    position: relative;
+    margin: 0 auto;
+    top: 175px;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: 2px solid #dc462d;
+    cursor: pointer;
+}
+.compare__add-casino{
+    font-family: "Lato Heavy", sans-serif;
+    position: relative;
+    margin: 0 auto;
+    top: 175px;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: 2px solid #dc462d;
+    cursor: pointer;
+    background: #fbe9e5;
+    color: #dc462d;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 31px 3px 0 3px;
+    text-align: center;
+    line-height: 15px;
+}
+.compare__add:before{
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 22px;
+    width: 17px;
+    height: 2px;
+    background: #dc462d;
+}
+.compare__add:after{
+    content: "";
+    position: absolute;
+    top: 23px;
+    left: 30px;
+    width: 2px;
+    height: 17px;
+    background: #dc462d;
+}
+.compare__rating .top-casinos-rate{
+    display: inline-block;
+    vertical-align: middle;
+}
+.compare__characteristics dt{
+    width: 60px;
+    display: inline-block;
+    vertical-align: top;
+    color: #747474;
+    margin-bottom: 19px;
+}
+.mobile_none{
+    display: none;
+}
+.compare__characteristics .systems{
+   margin-top:-5px;
+}
+.compare-soft img{
+    display: inline-block;
+    vertical-align: bottom;
+    margin-left: 3px;
+    width: 15px;
+    height: 15px;
+}
+.compare_item p{
+    display: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    margin-bottom: 12px;
+    line-height: 15px;
+    padding-left: 3px;
+    text-align: justify;
+}
+.mobile-yes{
+    display: block !important;
+}
+.item_mobile{
+    display: table-cell !important;
+}
+
+/* --------------- compare --------------- */
+
+/* --------------- /compare --------------- */
+
 
 @media (min-width: 768px) {
 
@@ -708,7 +879,7 @@
 
     /* --------------- follow-us --------------- */
     .follow-us__item {
-        width: 176px;
+        width: 169px;
         height: 161px;
         margin: 0 3px 8px 3px;
     }
@@ -782,6 +953,49 @@
         left: -39px;
     }
     /* --------------- /last-comments --------------- */
+
+    /* --------------- compare --------------- */
+    .compare_item {
+        padding: 0px 0 10px 0;
+    }
+    .compare__item{
+        width: 176px;
+        position: relative;
+        display: table-cell;
+        padding-bottom: 2px;
+    }
+    .compare_item p {
+        display: block;
+    }
+    .compare__characteristics dd {
+        width: 87px;
+        margin-left: 11px;
+    }
+    .compare__item_space{
+        width: 8px;
+        border:none;
+    }
+    .compare__add {
+        top: 164px;
+        width: 102px;
+        height: 100px;
+    }
+    .compare__add:before {
+        top: 46px;
+        left: 34px;
+        width: 30px;
+    }
+    .compare__add:after {
+        top: 32px;
+        left: 48px;
+        height: 30px;
+    }
+    .compare__add-casino{
+        top: 164px;
+        width: 102px;
+        height: 100px;
+    }
+    /* --------------- /compare --------------- */
 }
 @media (min-width: 960px) {
 
