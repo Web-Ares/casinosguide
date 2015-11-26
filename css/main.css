@@ -238,9 +238,14 @@
     width: 216px;
     position: absolute;
     z-index: 4;
+    top: 70px;
+    bottom: 0;
+    left: -216px;
+    -webkit-transition: left 300ms ease-in-out, top 300ms ease-in-out;
+    transition: left 300ms ease-in-out, top 300ms ease-in-out;
+}
+.site__aside{
 
-    -webkit-transition: opacity 300ms ease-in-out, top 300ms ease-in-out;
-    transition: opacity 300ms ease-in-out, top 300ms ease-in-out;
 }
 .site__aside-menu{
     border: 1px solid #dddddd;
