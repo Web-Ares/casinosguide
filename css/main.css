@@ -243,6 +243,7 @@
     left: -216px;
     -webkit-transition: left 300ms ease-in-out, top 300ms ease-in-out;
     transition: left 300ms ease-in-out, top 300ms ease-in-out;
+    overflow: hidden !important;
 }
 .site__aside{
 
