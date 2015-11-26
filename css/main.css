@@ -699,7 +699,7 @@
     z-index: 2;
 }
 .compare__sore span{
-    font-family: "Lato Heavy", sans-serif;
+    font-family: "Lato Black", sans-serif;
     font-size: 12px;
     color: #76a612;
     display: inline-block;
@@ -1385,6 +1385,105 @@
         padding-bottom: 29px;
     }
     /* --------------- /last-comments --------------- */
+
+    /* --------------- compare --------------- */
+    .compare {
+        font-size: 12px;
+        margin-top: 16px;
+    }
+    .compare .compare__item:nth-child(5){
+        display: none;
+    }
+    .compare .compare__item:nth-child(4){
+        display: none;
+    }
+    .compare_item {
+        padding: 0px 0 10px 0;
+    }
+    .compare__item {
+        width: 242px;
+        padding-bottom: 2px;
+        text-align: center;
+    }
+    .compare__item_space{
+         width: 19px;
+         border:none;
+     }
+    .compare__add {
+        top: 178px;
+        width: 130px;
+        height: 130px;
+    }
+    .compare__add-casino {
+        top: 178px;
+        width: 130px;
+        height: 130px;
+    }
+    .compare__add:after {
+        top: 41px;
+        left: 62px;
+        height: 40px;
+    }
+    .compare__add:before {
+        top: 59px;
+        left: 43px;
+        width: 40px;
+    }
+    .compare__add-casino {
+        font-size: 13px;
+        padding: 47px 19px 0 16px;
+    }
+    .compare__logo {
+        position: relative;
+        height: 91px;
+        background-size: 81px 81px;
+        margin-bottom: -5px;
+        z-index: 3;
+    }
+    .compare__title {
+        display: inline-block;
+        font-size: 15px;
+        letter-spacing: 0.4px;
+        padding-left: 7px;
+    }
+    .compare__rating {
+        display: inline-block;
+    }
+    .compare__characteristics {
+        text-align: left;
+    }
+    .compare__sore {
+        width: 33px;
+        height: 49px;
+        margin: 0 8px 0 13px;
+    }
+    .compare__sore span {
+        font-size: 14px;
+        margin-top: 28px;
+    }
+    .compare__characteristics dt {
+        width: 77px;
+        margin-left: 8px;
+        margin-bottom: 22px;
+        font-size: 14px;
+    }
+    .compare__characteristics dd {
+        width: 126px;
+        margin-left: 0px;
+        font-size: 14px;
+        letter-spacing: -0.3px;
+    }
+    .compare__characteristics .systems {
+        margin-top: -5px;
+    }
+    .compare__characteristics .systems>img {
+        height: 23px;
+        margin-right: 1px;
+    }
+    .mobile_none {
+        display: inline-block;
+    }
+    /* --------------- /compare --------------- */
 }
 @media (min-width: 1150px) {
 
