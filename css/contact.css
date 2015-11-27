@@ -85,6 +85,9 @@
     transition: background 0.3s ease;
     margin-top: 17px;
 }
+.contact-us .submit:hover{
+    opacity: 0.7;
+}
 .contact-us:after{
     position: absolute;
     content: "";
