@@ -14,7 +14,8 @@
     var InputVal = function (obj) {
 
         var _obj = obj,
-            _input = _obj.find('input');
+            _input = _obj.find('input'),
+            _textarea = _obj.find('textarea');
 
         var _addEvents = function () {
 
@@ -40,6 +41,42 @@
                     focusout: function(){
 
                         var curInput = $(this),
+                            curLabel = curInput.next('label');
+
+                        if (!curInput.val()==0) {
+                            curLabel.css({
+                                'opacity': 0
+                            })
+                        }else{
+                            curLabel.css({
+                                'opacity': 1
+                            })
+                        }
+                    }
+                });
+
+                _textarea.on({
+                    keyup: function(){
+                        console.log(101);
+                        var curItem = $(this),
+                            curLabel = curInput.next('label');
+
+                        if (!curInput.val()==0) {
+                            curLabel.css({
+                                'opacity': 0
+                            })
+                        }else{
+                            curLabel.css({
+                                'opacity': 1
+                            })
+                        }
+                    }
+                });
+
+                _textarea.on({
+                    focusout: function(){
+
+                        var curItem = $(this),
                             curLabel = curInput.next('label');
 
                         if (!curInput.val()==0) {
