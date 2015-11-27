@@ -624,6 +624,7 @@
     position: relative;
     background: url(../img/title_bg.png);
     padding-top: 19px;
+    margin-bottom: 24px;
 }
 .review__rank-title{
     font-size: 12px;
@@ -695,6 +696,55 @@
     position: relative;
     bottom: 6px;
 }
+.review__bonus{
+    position: relative;
+}
+.review__bonus-title{
+    font-size: 13px;
+    text-align: center;
+    padding-bottom: 6px;
+    padding-left: 7px;
+    padding-top: 52px;
+    background-color: #76a612;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: "Lato Semibold", sans-serif;
+}
+.review__bonus-descr{
+    border: 2px solid #76a612;
+    color: #b9aeae;
+    font-size: 12px;
+    padding-bottom: 16px;
+    text-align: center;
+}
+.review-data{
+    text-align: center;
+    display: block;
+    padding: 11px 0 13px 6px;
+}
+.review__bonus-descr dl{
+    position: relative;
+    width: 240px;
+    left: -12px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    text-align: left;
+}
+.review__bonus-descr dt,.review__bonus-descr dd {
+    display: inline-block;
+    vertical-align: top;
+}
+.review__bonus-descr dt{
+    width: 87px;
+
+}
+.review__bonus-descr dd{
+    width: 150px;
+    color: #000000;
+    line-height: 14px;
+    margin-bottom: 6px;
+}
+
 /* --------------- /review --------------- */
 
 /* --------------- btn --------------- */
