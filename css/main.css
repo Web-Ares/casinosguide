@@ -1021,6 +1021,152 @@ p{
 
 /* --------------- /compare --------------- */
 
+/* --------------- ranking-trend --------------- */
+.ranking-trend{
+    background: url("../img/ranking-bg.png") repeat left top;
+    color: #363636;
+    font-size: 13px;
+    line-height: 13px;
+    font-family: "helvetica roman", sans-serif;
+}
+.ranking-trend__items{
+    position: relative;
+    height: 220px;
+    max-width: 871px;
+    padding: 0 0 0 10px;
+}
+.ranking-trend__numbers{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    bottom: 35px;
+}
+.ranking-trend__numbers>div{
+    height: 15%;
+}
+.ranking-trend__numbers>div span{
+    position: relative;
+    display: block;
+    color: #2c2829;
+}
+.ranking-trend__numbers>div span:after{
+    content: '';
+    position: absolute;
+    left: 18px;
+    top: 6px;
+    height: 1px;
+    right: 0;
+    background: #dddddd;
+}
+.rankin-trend__graph{
+    position: relative;
+    z-index: 1;
+    height: 220px;
+}
+.rankin-trend__graph>div{
+    position: relative;
+    z-index: 1;
+    width: 445px;
+    height: 200px;
+}
+.rankin-trend__indicators{
+    top: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 28px;
+    overflow: hidden;
+}
+.rankin-trend__indicators>div{
+    height: 100%;
+    float: left;
+    width: 7.6%;
+    text-align: center;
+    position: relative;
+}
+.rankin-trend__indicators>div>div{
+    width: 20px;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin-left: -10px;
+}
+.rankin-trend__indicators div img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.rankin-trend__dates{
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.rankin-trend__dates>span {
+    float: left;
+    width: 7.6%;
+    text-align: center;
+    border-top: 1px solid #000;
+    padding: 2px 0 0;
+}
+.rankin-trend__dates>span.active{
+    color: #dc462d;
+    border-top: 1px solid #dc462d;
+}
+/* --------------- /ranking-trend --------------- */
+
+/* --------------- tooltip --------------- */
+.tooltip{
+    display: inline-block;
+    vertical-align: top;
+    width: 14px;
+    position: relative;
+    z-index: 3;
+}
+.tooltip span{
+    width: 14px;
+    height: 14px;
+    border-radius: 14px;
+    background: #76a612;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 12px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+.tooltip__dropdown{
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    width: 244px;
+    margin-left: -122px;
+    border: 2px solid #76a612;
+    background: #fff;
+    color: #3b3139;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    line-height: 14px;
+    box-shadow: 0 3px 0 0 #dbdbdb;
+    padding: 15px 9px;
+}
+.tooltip__dropdown:after{
+    content: '';
+    position: absolute;
+    background: url("../img/tooltip.png") no-repeat;
+    width: 21px;
+    height: 13px;
+    top: -13px;
+    left: 50%;
+    margin-left: -10.5px;
+}
+/* --------------- /tooltip --------------- */
+
 
 @media (min-width: 768px) {
 
@@ -1267,6 +1413,34 @@ p{
         height: 100px;
     }
     /* --------------- /compare --------------- */
+
+    /* --------------- ranking-trend --------------- */
+    .ranking-trend{
+        font-size: 12px;
+        line-height: 12px;
+    }
+    .ranking-trend__numbers{
+        bottom: 16px;
+    }
+    .ranking-trend__items{
+        height: 201px;
+        max-width: 871px;
+        padding: 0 0 0 11px;
+    }
+    .rankin-trend__graph{
+        height: 364px;
+    }
+    .rankin-trend__graph>div{
+        width: 100%;
+        height: 201px;
+    }
+    .rankin-trend__dates{
+        bottom: 11px;
+    }
+    .rankin-trend__dates>span {
+        padding: 4px 0 0;
+    }
+    /* --------------- /ranking-trend --------------- */
 }
 @media (min-width: 960px) {
 
@@ -1914,6 +2088,43 @@ p{
     }
 
     /* --------------- /compare --------------- */
+
+    /* --------------- ranking-trend --------------- */
+    .ranking-trend{
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .ranking-trend__numbers{
+        bottom: 56px;
+    }
+    .ranking-trend__items{
+        height: 421px;
+        max-width: 871px;
+        padding: 0 0 0 17px;
+    }
+    .rankin-trend__graph{
+        height: 421px;
+    }
+    .rankin-trend__graph>div{
+        width: 876px;
+        height: 364px;
+    }
+    .rankin-trend__indicators{
+        bottom: 23px;
+        overflow: hidden;
+    }
+    .rankin-trend__indicators>div>div{
+        width: 38px;
+        bottom: 0;
+        margin-left: -19px;
+    }
+    .rankin-trend__dates{
+        bottom: 0;
+    }
+    .rankin-trend__dates>span {
+        padding: 6px 0 0;
+    }
+    /* --------------- /ranking-trend --------------- */
 }
 @media (min-width: 1150px) {
 
@@ -2196,5 +2407,42 @@ p{
         margin-bottom: 0px;
     }
     /* --------------- /compare  --------------- */
+
+    /* --------------- ranking-trend --------------- */
+    .ranking-trend{
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .ranking-trend__numbers{
+        bottom: 0;
+    }
+    .ranking-trend__items{
+        height: 364px;
+        max-width: 871px;
+        padding: 0 0 0 17px;
+    }
+    .rankin-trend__graph{
+        height: 364px;
+    }
+    .rankin-trend__graph>div{
+        width: 100%;
+        height: 364px;
+    }
+    .rankin-trend__indicators{
+        bottom: 23px;
+        overflow: hidden;
+    }
+    .rankin-trend__indicators>div>div{
+        width: 38px;
+        bottom: 0;
+        margin-left: -19px;
+    }
+    .rankin-trend__dates{
+        bottom: 0;
+    }
+    .rankin-trend__dates>span {
+        padding: 7px 0 0;
+    }
+    /* --------------- /ranking-trend --------------- */
 }
     
