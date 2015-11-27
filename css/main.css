@@ -17,7 +17,6 @@
     logo
 
     important-info
-*/
 
 /* --------------- placeholder --------------- */
 ::-webkit-input-placeholder {
@@ -83,20 +82,16 @@
 /* --------------- /fonts --------------- */
 
 /* --------------- site --------------- */
-.site__content__section {
-    position: relative;
-    width: 304px;
-    margin-bottom: 8px;
+.site__content__item>div{
+    padding: 0 10px 10px 10px;
 }
 .site__content__item{
     position: relative;
     width: 100%;
     margin: 0 auto;
-    padding: 0 10px 10px 10px;
-    border-right: 1px solid #dbdbdb;
-    border-left: 1px solid #dbdbdb;
+    border: 1px solid #dbdbdb;
     border-bottom: 3px solid #dbdbdb;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 .site__title {
     position: relative;
@@ -111,6 +106,9 @@
     text-transform: uppercase;
     letter-spacing: 0.4px;
     z-index: 3;
+}
+.site__content__text p:last-child{
+    margin-bottom:15px;
 }
 .site {
     min-height: 100%;
@@ -128,7 +126,7 @@
     height: 311px;
 }
 .site__content-wrap {
-    padding-top: 10px;
+    padding-top: 6px;
 }
 .site__content{
     max-width: 320px;
@@ -431,7 +429,7 @@
     width: 304px;
     height: 1px;
     background-color: #ddd;
-    left: -6px;
+    left: -11px;
     bottom: -20px;
 }
 .top-casinos__item:last-child:after{
@@ -561,9 +559,6 @@
 }
 .top-casinos-play a{
     margin-bottom: 3px;
-}
-.top-casinos-games{
-    padding-left: 5px;
 }
 .show-desktop{
     display: none;
@@ -773,12 +768,12 @@
 .follow-us{
     position: relative;
     max-width: 934px;
-    margin-bottom: 21px;
+    margin-bottom: 9px;
     padding: 0 2px;
 }
 .follow-us__wrap{
     width: 310px;
-    margin-left: -3px;
+    margin-left: -6px;
     display: block;
     text-align: center;
 }
@@ -858,7 +853,7 @@
 .last-comments__score p{
     font-family: "Lato Semibold", sans-serif;
     display: inline;
-    margin-left: 10px;
+    margin-left: 7px;
     line-height: 12px;
 }
 .last-comments__score {
@@ -878,8 +873,10 @@
     vertical-align: bottom;
 }
 /* --------------- /last-comments --------------- */
+.compare_item>div{
+    padding: 0 0 10px 0;
+}
 .compare_item{
-    padding: 0px 0 10px 0;
     border: none;
 }
 .compare{
@@ -1048,7 +1045,7 @@ p{
     font-size: 12px;
     margin-bottom: 12px;
     line-height: 15px;
-    padding-left: 3px;
+    padding-left: 2px;
     text-align: justify;
 }
 .compare_item p{
@@ -1056,6 +1053,7 @@ p{
 }
 .mobile-yes{
     display: block !important;
+    margin-bottom: 0px;
 }
 .item_mobile{
     display: table-cell !important;
@@ -1220,16 +1218,19 @@ p{
     }
     .site__content__section {
         width: 726px;
-        margin-top: 13px;
+        margin-top: 10px;
     }
     .site__content__wrap {
         margin: 0 auto;
     }
-    .site__content__item {
+    .site__content__item>div {
         padding: 12px 20px 20px 10px;
     }
     .site__title {
         margin-bottom: 0;
+    }
+    .site__content__text p:last-child {
+        margin-bottom: 20px;
     }
     .site__header {
         height: 98px;
@@ -1250,7 +1251,7 @@ p{
         background-size: 34px 23px;
     }
     .site__content-wrap {
-        padding-top: 19px;
+        padding-top: 10px;
     }
     .site__content{
         max-width: 768px;
@@ -1318,9 +1319,8 @@ p{
     /* --------------- /follow-us --------------- */
 
     /* --------------- top-casinos --------------- */
-    .top-casinos-games{
+    .top-casinos-games>div{
         padding-top: 0;
-        padding-left: 14px;
     }
     .top-casinos__item-logo img {
         margin-right: 20px;
@@ -1352,15 +1352,12 @@ p{
         width: 726px;
         height: 1px;
         background-color: #ddd;
-        left: -15px;
+        left: -10px;
         bottom: -20px;
     }
     /* --------------- /top-casinos --------------- */
 
     /* --------------- review --------------- */
-    .review-logo{
-
-    }
     .review__list .review-est{
         float: left;
         margin-right: 97px;
@@ -1434,7 +1431,7 @@ p{
     /* --------------- /last-comments --------------- */
 
     /* --------------- compare --------------- */
-    .compare_item {
+    .compare_item>div {
         padding: 0px 0 10px 0;
     }
     .compare__item{
@@ -1445,6 +1442,9 @@ p{
     }
     .compare_item p {
         display: block;
+    }
+    .compare_item p:last-child{
+        margin-bottom: 0;
     }
     .compare__characteristics dd {
         width: 87px;
@@ -1473,6 +1473,12 @@ p{
         top: 164px;
         width: 102px;
         height: 100px;
+    }
+    .compare__logo {
+        margin-bottom: 7px;
+    }
+    .mobile-yes {
+        margin-bottom: 15px;
     }
     /* --------------- /compare --------------- */
 
@@ -1514,17 +1520,16 @@ p{
         width: 763px;
         margin-top: 0;
     }
-    .site__content__item {
+    .site__content__item>div {
         padding: 0 30px 0 23px;
-        margin-bottom: 31px;
     }
     .site__title {
         height: 65px;
         font-size: 19px;
         padding-top: 27px;
     }
-    .site__content .site__content__text{
-        max-width: 763px;
+    .site__content__text p{
+        line-height: 20px;
     }
     .site__header {
         height: 183px;
@@ -1596,13 +1601,18 @@ p{
         margin: 0 auto;
         position: relative;
     }
-    .site__content{
-        max-width: 100%;
+    .site__content {
+        max-width: 763px;
+        margin: 0;
         padding: 0;
+    }
+    .site__content__item {
+        margin-bottom: 17px;
     }
     .site__content-wrap {
         position: relative;
         z-index: 3;
+        padding-top: 13px;
     }
     .site__footer{
         height: 233px;
@@ -1682,13 +1692,12 @@ p{
         margin-left: -24px;
     }
     .follow-us {
-        width: 763px;
         margin-bottom: 7px;
     }
     .follow-us__title {
         font-size: 24px;
         margin-bottom: 24px;
-        padding-top: 26px;
+        padding-top: 40px;
     }
     .follow-us__title span:before {
         top: 14px;
@@ -2051,13 +2060,13 @@ p{
     }
     .last-comments__item:before {
         top: -30px;
-        left: -76px;
+        left: -74px;
         width: 41px;
         height: 62px;
     }
     .last-comments__item:after {
         top: -5px;
-        left: -67px;
+        left: -65px;
         width: 23px;
         height: 36px;
     }
@@ -2079,7 +2088,7 @@ p{
     .compare .compare__item:nth-child(4){
         display: none;
     }
-    .compare_item {
+    .compare_item>div {
         padding:0;
     }
     .compare__item {
@@ -2152,8 +2161,8 @@ p{
         line-height: 24px;
         margin-bottom: 24px;
     }
-    .compare_item p:last-child{
-        margin-bottom: 0;
+    .compare_item>div p:last-child {
+        margin-bottom: -5px;
     }
     .compare__characteristics dt {
         width: 78px;
@@ -2170,7 +2179,7 @@ p{
     .compare__characteristics .systems {
         width: 100px;
         margin-right: 0;
-        left: 42px;
+        left: 38px;
         margin-top: 2px;
     }
     .compare__characteristics .systems>img {
@@ -2210,7 +2219,16 @@ p{
     .compare__characteristics .display-change-banking{
         width: 108px;
     }
+    .mobile-yes {
+        margin-bottom: 23px;
+    }
+    /* --------------- /compare --------------- */
 
+    /* --------------- ranking-trend --------------- */
+    .ranking-trend{
+        font-size: 16px;
+        line-height: 16px;
+    }
     /* --------------- /compare --------------- */
 
     /* --------------- ranking-trend --------------- */
@@ -2256,18 +2274,24 @@ p{
     .site:after{
         height: 223px;
     }
-    .site__content__section {
-        width: 913px;
+    .site__content {
+        max-width: 913px;
     }
-    .site__content__item {
+    .site__content__item>div{
         padding: 13px 30px 0 30px;
+    }
+    .site__content__item{
+        margin-bottom: 20px;
+    }
+    .site__content-wrap {
+        padding-top: 3px;
     }
     .site__title {
         font-size: 25px;
         padding-top: 21px;
     }
-    .site__content .site__content__text{
-        max-width: 913px;
+    .site__content__text p:last-child {
+        margin-bottom: 38px;
     }
     .site__header {
         height: 197px;
@@ -2307,7 +2331,9 @@ p{
         margin: 0 0 10px;
     }
     /* --------------- /site --------------- */
-
+    p {
+        line-height: 18px;
+    }
     /* --------------- logo --------------- */
     .logo {
         top: 5px;
@@ -2316,9 +2342,6 @@ p{
         height: 176px;
     }
     /* --------------- /logo --------------- */
-    .follow-us{
-        width: 916px;
-    }
     .follow-us__title {
         margin-bottom: 18px;
     }
@@ -2330,7 +2353,7 @@ p{
     }
     .follow-us__wrap {
         width: 918px;
-        margin-left: 0px;
+        margin-left: -5px;
     }
     .follow-us__item {
         width: 217px;
@@ -2355,7 +2378,7 @@ p{
         padding-bottom: 23px;
     }
     .follow-us__title {
-        padding-top: 1px;
+        padding-top: 11px;
     }
     .last-comments .top-casinos__score-count {
         padding-top: 0;
@@ -2364,8 +2387,7 @@ p{
     /* --------------- /last-comments --------------- */
 
     /* --------------- top-casinos --------------- */
-    .top-casinos-games{
-        padding-left: 12px;
+    .top-casinos-games>div{
         padding-top: 0;
     }
     .top-casinos-number {
@@ -2377,7 +2399,7 @@ p{
     }
     .top-casinos__head:after {
         width: 913px;
-        left: -13px;
+        left: -31px;
         bottom: 1px;
     }
     .top-casinos__item {
@@ -2387,7 +2409,7 @@ p{
     .top-casinos__item:after {
         content: "";
         width: 912px;
-        left: -12px;
+        left: -31px;
         bottom: 1px;
     }
     .top-casinos-country {
@@ -2520,7 +2542,10 @@ p{
     /* --------------- compare  --------------- */
     .compare__item {
         width: 215px;
-        padding-bottom: 8px;
+        padding-bottom: 12px;
+    }
+    .compare {
+        margin-top: 0px;
     }
     .compare .compare__item:nth-child(5) {
         display: table-cell;
@@ -2528,7 +2553,7 @@ p{
     .compare .compare__item:nth-child(4) {
         display: table-cell;
     }
-    .compare_item {
+    .compare_item>div {
         padding: 0;
     }
     .compare__item_space {
@@ -2557,6 +2582,67 @@ p{
         margin-top: -22px;
         left: 9px;
         margin-bottom: 0;
+    }
+    .compare__logo {
+        margin-bottom: -12px;
+    }
+    .compare__title {
+        padding-left: 0;
+        padding-right: 4px;
+    }
+    .compare__sore {
+        margin: 0 8px 0 14px;
+    }
+    .compare__rating {
+        margin-bottom: 6px;
+    }
+    .compare__characteristics dt {
+        width: 74px;
+        margin-bottom: 17px;
+    }
+    .compare__characteristics .compare-soft {
+        margin-bottom: 23px;
+    }
+    .compare__characteristics .micro {
+        margin-top: -17px;
+        margin-bottom: 0px;
+    }
+    .compare__characteristics .display-change-operating {
+        margin-bottom: 22px;
+    }
+    .compare__characteristics .systems {
+        margin-top: -15px;
+        left: 9px;
+        margin-bottom: 0;
+    }
+    .compare__characteristics .display-change-dt {
+        margin-bottom: 21px;
+    }
+    .compare__characteristics .display-change-dd {
+        margin-top: -18px;
+        margin-bottom: -9px;
+    }
+    .compare__characteristics .change_mini-dt{
+        width: 100%;
+        margin-bottom: 21px;
+    }
+    .compare__characteristics .change_mini-dd{
+        width: 100%;
+        margin-left: 9px;
+        margin-top: -18px;
+        margin-bottom: -9px;
+    }
+    .compare__add {
+        top: 175px;
+    }
+    .compare__add-casino {
+        top: 176px;
+    }
+    .mobile-yes {
+        margin-bottom: 18px;
+    }
+    .compare_item p:last-child {
+        margin-bottom: 33px;
     }
     /* --------------- /compare  --------------- */
 
