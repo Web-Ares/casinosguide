@@ -698,6 +698,7 @@
 }
 .review__bonus{
     position: relative;
+    margin-bottom: 55px;
 }
 .review__bonus-title{
     font-size: 13px;
@@ -744,7 +745,37 @@
     line-height: 14px;
     margin-bottom: 6px;
 }
-
+.review__bonus-logo{
+    background-image: url("../img/bacgroundlogo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 89px;
+    width: 89px;
+    position: absolute;
+    top: -44px;
+    left: 50%;
+    margin-left: -42px;
+    text-align: center;
+    padding-top: 30px;
+    font-weight: bold;
+    text-shadow: 0 1px 0 #dbdbdb;
+    font-family: "Lato Black",sans-serif;
+}
+.review__bonus-logo span{
+    color: #76a612;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 12px;
+    width: 67px;
+    display: block;
+    margin: 0 auto;
+    line-height: 15px;
+    overflow: hidden;
+    height: 34px;
+}
+.review__bonus:last-child{
+    margin-right: 0;
+}
 /* --------------- /review --------------- */
 
 /* --------------- btn --------------- */
@@ -1130,7 +1161,7 @@ p{
         margin: 0 auto;
     }
     .site__content__item {
-        padding: 12px 20px 20px 10px;
+        padding: 12px 10px 20px 10px;
     }
     .site__title {
         margin-bottom: 0;
@@ -1285,8 +1316,8 @@ p{
     .review__list .review-play {
         position: absolute;
         left: auto;
-        right: -34px;
-        top: -2px;
+        right: -23px;
+        top: 0px;
     }
     .review__list{
         position: relative;
@@ -1308,6 +1339,36 @@ p{
     }
     .review__rank-rating-item>div {
         margin-bottom: 123px;
+    }
+    .review__bonus {
+        margin-top: -97px;
+        margin-bottom: 55px;
+        width: 345px;
+        display: inline-block;
+        margin-right: 10px;
+    }
+    .review__bonus-logo {
+        margin-left: -43px;
+    }
+    .review__bonus-title {
+        padding-left: 2px;
+    }
+    .review-data {
+        padding: 7px 0 9px 2px;
+    }
+    .review__bonus-descr dl {
+        width: 314px;
+        left: -3px;
+        margin-bottom: 3px;
+    }
+    .review__bonus-descr dd {
+        width: 224px;
+        line-height: 14px;
+        margin-bottom: 5px;
+    }
+    .review__bonus-descr .btn{
+        width: 101px;
+        height: 19px;
     }
     /* --------------- /review --------------- */
 
@@ -1823,6 +1884,7 @@ p{
     .review__rank {
         width: 763px;
         padding-top: 55px;
+        margin-bottom: 111px;
     }
     .review__rank-rating-item {
         width: 33%;
@@ -1863,7 +1925,24 @@ p{
         border-left: 706px solid #fff;
         bottom: 0;
     }
-
+    .review__bonus {
+        width: 360px;
+        margin-right: 16px;
+    }
+    .review__bonus-logo {
+        height: 133px;
+        width: 133px;
+        top: -62px;
+        left: 50%;
+        margin-left: -65px;
+        padding-top: 51px;
+    }
+    .review__bonus-logo span {
+        font-size: 16px;
+        width: 81px;
+        line-height: 18px;
+        overflow: hidden;
+    }
     /* --------------- /review --------------- */
 
     /* --------------- last-comments --------------- */
