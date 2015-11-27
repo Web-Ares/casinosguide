@@ -7,6 +7,10 @@
             new InputVal ( $(this) );
         } );
 
+        $.each( $('.ranking-trend'), function(){
+            new Graph ( $(this) );
+        } );
+
         new Menu();
 
     });
@@ -120,6 +124,49 @@
                     cursorborderradius: "5px",
                     cursorborder: false,
                     cursorwidth: "5px",
+                    railpadding: {
+                        top: 0,
+                        right: 0,
+                        left: 0,
+                        bottom: 0
+                    }
+                });
+            },
+            _init = function () {
+                _addEvents();
+            };
+
+        _init();
+    };
+
+    var Graph = function (obj) {
+
+        var _obj = obj,
+            _graph = _obj.find('.rankin-trend__graph'),
+            _scroll = null,
+            _window = $(window);
+
+        var _addEvents = function () {
+
+                _window.on({
+                    'resize': function(){
+                        _scroll.resize();
+                    },
+                    'load': function(){
+                        _addScroll();
+                    }
+                });
+
+            },
+            _addScroll = function(){
+                _scroll = _graph.niceScroll({
+                    cursorcolor:"#dbdbdb",
+                    cursoropacitymin: "1",
+                    cursorborderradius: "0",
+                    cursorborder: false,
+                    cursorwidth: "18px",
+                    touchbehavior: true,
+                    background: "#efefef",
                     railpadding: {
                         top: 0,
                         right: 0,
