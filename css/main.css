@@ -2335,7 +2335,7 @@ p{
         width: 100%;
         margin-top: -22px;
         margin-left: 9px;
-        margin-bottom: 0px;
+        margin-bottom: 0p;
     }
     .compare__characteristics .display-change-operating{
         width: 100%;
@@ -2345,7 +2345,7 @@ p{
         width: 100%;
         margin-top: -22px;
         left: 9px;
-        margin-bottom: 0px;
+        margin-bottom: 0;
     }
     /* --------------- /compare  --------------- */
 }
