@@ -74,6 +74,12 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: "tomato round";
+    src: url("../fonts/TomatoRoundCondensed.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
 /* --------------- /fonts --------------- */
 
 /* --------------- site --------------- */
@@ -627,13 +633,16 @@
     font-weight: bold;
     position: relative;
     left: 3px;
-    margin-bottom: 23px;
+    margin-bottom: 17px;
+
 }
 .review__rank-rating-item span{
     color: #dc462d;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 10px;
+    display: inline-block;
+    font-family: "tomato round", sans-serif;
 }
 .review__rank-rating-item  .social__item{
     background: url("../img/social1.png") no-repeat center;
@@ -641,9 +650,44 @@
     text-align: center;
     padding-top: 20px;
     color: #76a612;
+    font-size: 12px;
+    margin-right: 3px;
 }
 .review__rank-rating-item  .social__item:before{
     content: "";
+}
+.review__rank-rating{
+    text-align: center;
+}
+.review__rank-rating-item{
+    width: 32%;
+    display: inline-block;
+}
+.review__rank-rating-item .social__item_red{
+    color: #dc462d;
+}
+.review__arrow{
+    color: #76a612;
+    font-size: 12px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+.review__rank-rating-item>div{
+    display: block;
+    padding: 0 13px;
+    padding-right: 12px;
+    margin-top: -2px;
+    margin-bottom: 30px;
+}
+.review__arrow img {
+    height: 21px;
+    margin-right: 5px;
+}
+.review__arrow span{
+    color: #76a612;
+    font-size: 13px;
+    position: relative;
+    bottom: 6px;
 }
 /* --------------- /review --------------- */
 
@@ -1163,6 +1207,24 @@ p{
     }
     .review__list{
         position: relative;
+        margin-bottom: 13px;
+    }
+    .review__rank {
+        width: 725px;
+        padding-top: 14px;
+    }
+    .review__rank-title {
+        left: 0;
+        margin-bottom: 11px;
+    }
+    .review__rank-rating-item span {
+        font-size: 12px;
+    }
+    .review__rank-rating-item {
+        width: 23%;
+    }
+    .review__rank-rating-item>div {
+        margin-bottom: 123px;
     }
     /* --------------- /review --------------- */
 
@@ -1628,8 +1690,70 @@ p{
         top: 12px;
     }
     .review__list {
-        padding-bottom: 10px;
+        padding-bottom: 0;
+        margin-bottom: 11px;
     }
+    .review__rank-title {
+        margin-bottom: 7px;
+        font-size: 14px;
+        width: 213px;
+        left: 1px;
+        padding: 13px;
+        padding-left: 4px;
+        position: relative;
+        top: -20px;
+        border-top: 2px solid #dddddd;
+        border-bottom: 2px solid #dddddd;
+    }
+    .review__rank-rating-item span {
+        font-size: 21px;
+        left: 3px;
+        top: -1px;
+    }
+    .review__rank {
+        width: 763px;
+        padding-top: 55px;
+    }
+    .review__rank-rating-item {
+        width: 33%;
+    }
+    .review__rank-rating-item {
+        width: 30%;
+        margin: 0 11px;
+        margin-bottom: 64px;
+    }
+    .review__rank-rating-item .social__item {
+        position: relative;
+        top: -15px;
+        font-size: 24px;
+        padding-top: 43px;
+    }
+    .review__arrow {
+        vertical-align: top;
+        position: relative;
+        top: 26px;
+        left: 9px;
+    }
+    .review__rank-rating-item>div {
+        margin-bottom: -13px;
+    }
+    .review__rank:before{
+        content: "";
+        position: absolute;
+        border: 40px solid transparent;
+        border-left: 728px solid #fff;
+        border-top: 1px solid #fff;
+        top: 0;
+    }
+    .review__rank:after{
+        content: "";
+        position: absolute;
+        border: 59px solid transparent;
+        border-bottom: 3px solid #fff;
+        border-left: 706px solid #fff;
+        bottom: 0;
+    }
+
     /* --------------- /review --------------- */
 
     /* --------------- last-comments --------------- */
@@ -2055,6 +2179,7 @@ p{
     }
     .review-section {
         padding: 0 16px;
+        overflow: hidden;
     }
     .review .country-flags {
         margin-right: 108px;
@@ -2064,6 +2189,7 @@ p{
         height: 43px;
         margin-bottom: 8px;
         padding-top: 13px;
+        border-bottom: 3px solid #d3cfcf;
     }
     .review__list .review-play {
         right: -24px;
@@ -2071,6 +2197,32 @@ p{
     }
     .review-play .btn_rev:hover{
         background-color: #efdada;
+    }
+    .review__rank {
+        width: 911px;
+        padding-top: 67px;
+        left: -16px;
+        position: relative;
+        top: -15px;
+        z-index: 0;
+        padding-bottom: 8px;
+    }
+    .review__list {
+        padding-bottom: 2px;
+        z-index: 2;
+        margin-bottom: 11px;
+    }
+    .review__rank:before {
+        content: "";
+        border: 60px solid transparent;
+        border-left: 995px solid #fff;
+        border-top: 0 solid #fff;
+    }
+    .review__rank:after {
+        content: "";
+        border: 75px solid transparent;
+        border-bottom: 0 solid #fff;
+        border-left: 914px solid #fff;
     }
 
     /* --------------- /review --------------- */
