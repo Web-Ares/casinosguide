@@ -290,6 +290,9 @@
 .site__footer-info ul a{
     color: #363636;
 }
+.site__footer-info ul a:hover{
+    text-decoration: underline;
+}
 .site__footer-items{
     text-align: center;
 }
@@ -320,6 +323,9 @@
 }
 .site__footer-menu a{
     color: #363636;
+}
+.site__footer-menu a:hover{
+    text-decoration: underline;
 }
 .site__aside{
     width: 180px;
@@ -1057,7 +1063,7 @@ p{
     .site__footer-layout{
         height: 320px;
         max-width: 768px;
-        padding: 0 20px;
+        padding: 17px 20px 0;
     }
     .site__footer-copyright{
         font-size: 12px;
@@ -1066,6 +1072,24 @@ p{
     .site__footer-menu{
         font-size: 12px;
         line-height: 15px;
+    }
+    .site__footer-info h2 {
+        padding: 0 0 8px 8px;
+    }
+    .site__footer-info ul li {
+        padding: 10px 0 9px 8px;
+    }
+    .site__footer-logo {
+        width: 106px;
+        height: 82px;
+        margin: 0 auto 14px;
+    }
+    .site__footer-logo a {
+        width: 106px;
+        height: 82px;
+    }
+    .site__footer-menu li {
+        padding: 0 9px;
     }
     /* --------------- /site --------------- */
 
@@ -1341,27 +1365,54 @@ p{
     .site__footer-layout{
         height: 233px;
         max-width: 960px;
-        padding: 0;
+        padding: 31px 0 0 391px;
     }
     .site__footer-info{
-        float: right;
         font-size: 14px;
         line-height: 18px;
         color: #363636;
+        display: inline-block;
+        vertical-align: top;
+        width: 186px;
+        float: left;
     }
     .site__footer-info h2{
         color: #363636;
         border-bottom: none;
-        margin: 0 0 10px;
+        margin: 0 0 11px;
         padding: 0;
     }
     .site__footer-info ul li{
-        padding: 10px 0 10px;
+        padding: 6px 0;
         border-bottom: none;
     }
     .site__footer-menu{
         font-size: 11px;
         line-height: 14px;
+    }
+    .site__footer-logo {
+        margin: 0;
+        width: 212px;
+        height: 165px;
+        position: absolute;
+        left: 0;
+        top: 23px;
+    }
+    .site__footer-logo a {
+        width: 212px;
+        height: 165px;
+    }
+    .site__footer-items {
+        display: inline-block;
+        vertical-align: top;
+        float: right;
+        width: 347px;
+    }
+    .site__footer-copyright{
+        margin: 0 0 11px;
+    }
+    .site__footer-menu li {
+        padding: 0 10px;
     }
     /* --------------- /site --------------- */
 
@@ -1891,10 +1942,20 @@ p{
     .site__footer-layout{
         height: 223px;
         max-width: 1150px;
+        padding: 33px 278px 0 272px;
     }
     .site__footer-menu{
         font-size: 11px;
         line-height: 14px;
+    }
+    .site__footer-info{
+        float: right;
+    }
+    .site__footer-items{
+        float: none;
+    }
+    .site__footer-copyright {
+        margin: 0 0 10px;
     }
     /* --------------- /site --------------- */
 
