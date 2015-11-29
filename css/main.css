@@ -812,6 +812,24 @@
     color: #fff;
     margin-left: 2px;
 }
+.review__description{
+    background-color: #efefef;
+    border: 2px solid #d7d4d4;
+    font-size: 12px;
+    padding: 22px 6px 10px 11px;
+}
+.review__description dt, .review__description dd{
+    display: inline-block;
+    vertical-align: top;
+}
+.review__description dt{
+    width: 88px;
+    margin-right: 13px;
+}
+.review__description dd{
+    width: 157px;
+    margin-bottom: 12px;
+}
 /* --------------- /btn --------------- */
 
 /* --------------- follow-us --------------- */
@@ -1317,7 +1335,7 @@ p{
         position: absolute;
         left: auto;
         right: -23px;
-        top: 0px;
+        top: 0;
     }
     .review__list{
         position: relative;
@@ -1347,6 +1365,9 @@ p{
         display: inline-block;
         margin-right: 10px;
     }
+    .review__bonus:first-child{
+
+    }
     .review__bonus-logo {
         margin-left: -43px;
     }
@@ -1370,6 +1391,7 @@ p{
         width: 101px;
         height: 19px;
     }
+
     /* --------------- /review --------------- */
 
     /* --------------- last-comments --------------- */
