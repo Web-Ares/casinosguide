@@ -860,6 +860,77 @@
 .btn_cancel:hover{
     background: #d0cfcf;
 }
+.review__description{
+    background-color: #efefef;
+    border: 2px solid #d7d4d4;
+    font-size: 12px;
+    padding: 22px 6px 10px 11px;
+}
+.review__description dt, .review__description dd{
+    display: inline-block;
+    vertical-align: top;
+}
+.review__description dt{
+    width: 93px;
+    margin-right: 8px;
+}
+.review__description dd{
+    width: 157px;
+    margin-bottom: 12px;
+}
+.review-image img{
+    width: 23px;
+    margin-right: 5px;
+}
+.review__description .review-image{
+    position: relative;
+    bottom: 8px;
+    margin-bottom: 0;
+}
+
+.review__description-left{
+
+}
+.review__description-center{
+    margin-top: -2px;
+}
+
+.review__description-center dd {
+    margin-bottom: 23px;
+}
+.review__description-center .review-frame {
+    margin-bottom: 6px;
+}
+.review__description-center dd span{
+    font-weight: bold;
+    display: block;
+}
+.review__description-right{
+
+}
+.review__description-center .review-frame-last{
+    margin-bottom: 12px;
+}
+.review-email{
+    text-decoration: underline;
+    color: #dc462d;
+    width: 100px;
+}
+.review__description-center dl dd:last-child{
+    margin-bottom: 12px;
+}
+.review__description-right dl dd:last-child{
+    margin-bottom: 10px;
+}
+.review__description-center dd .review-mobile{
+    font-weight: normal;
+}
+.review__description-center .bussines{
+    display: none;
+}
+.review-email-1{
+    display: none;
+}
 /* --------------- /btn --------------- */
 
 /* --------------- follow-us --------------- */
