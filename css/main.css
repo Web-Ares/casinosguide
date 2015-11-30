@@ -878,6 +878,12 @@
 .review__description-right dl dd:last-child{
     margin-bottom: 10px;
 }
+.review__description-center dd .review-mobile{
+    font-weight: normal;
+}
+.review__description-center .bussines{
+    display: none;
+}
 /* --------------- /btn --------------- */
 
 /* --------------- follow-us --------------- */
@@ -1408,7 +1414,7 @@ p{
     }
     .review__bonus {
         margin-top: -97px;
-        margin-bottom: 55px;
+        margin-bottom: 14px;
         width: 345px;
         display: inline-block;
         margin-right: 10px;
@@ -1439,7 +1445,53 @@ p{
         width: 101px;
         height: 19px;
     }
-
+    .review__description {
+        padding: 10px 6px 10px 11px;
+    }
+    .review__description dt {
+        width: 130px;
+        margin-right: 28px;
+    }
+    .review__description dd {
+        width: 444px;
+        margin-bottom: 18px;
+    }
+    .review__description-left .systems{
+        position: relative;
+        top: -7px;
+        left: -2px;
+        margin-bottom: 6px;
+    }
+    .review__description-left .systems>img {
+        height: 23px;
+        margin-right: 2px;
+    }
+    .review-image img {
+        margin-right: 4px;
+    }
+    .review__description-center {
+        margin-top: 4px;
+    }
+    .review__description .review-tablet{
+        display: none;
+    }
+    .review__description-center dd span{
+        display: inline-block;
+    }
+    .review__description-center dd .review-mobile{
+        font-weight: normal;
+        display: none;
+    }
+    .review__description-center .bussines{
+        display: inline-block;
+        font-weight: normal;
+    }
+    .review__description-center .review-frame {
+        margin-bottom: 6px;
+        width: auto;
+        display: inline-block;
+        margin-right: 3px;
+    }
     /* --------------- /review --------------- */
 
     /* --------------- last-comments --------------- */
