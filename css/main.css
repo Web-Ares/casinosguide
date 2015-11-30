@@ -20,14 +20,23 @@
 
 /* --------------- placeholder --------------- */
 ::-webkit-input-placeholder {
-    color: #000;
+    color: #eaeceb;
+    -webkit-transition: color 300ms ease-in-out;
 }
 :-moz-placeholder {
-    color: #000;
+    color: #eaeceb;
+    -webkit-transition: color 300ms ease-in-out;
+    transition: color 300ms ease-in-out;
 }
 .placeholder {
-    color: #000;
+    color: #eaeceb;
+    -webkit-transition: color 300ms ease-in-out;
+    transition: color 300ms ease-in-out;
 }
+:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder          {color: transparent}
+:focus:-moz-placeholder           {color: transparent}
+:focus:-ms-input-placeholder      {color: transparent}
 /* --------------- /placeholder --------------- */
 
 /* --------------- fonts --------------- */
@@ -1227,10 +1236,245 @@ p{
 }
 /* --------------- /tooltip --------------- */
 
+/* --------------- contact --------------- */
+.contact .site__title span:last-child{
+    display: none;
+}
+.contact-us{
+    position: relative;
+    width: 100%;
+    margin: 16px auto 30px auto;
+    padding: 5px 0 16px 0;
+}
+.contact-us fieldset {
+    position: relative;
+    display: block;
+    vertical-align: top;
+}
+.contact-us fieldset input[type='text'],
+.contact-us fieldset input[type='email'],
+.contact-us fieldset textarea {
+    width: 100%;
+    height: 19px;
+    margin-bottom: 4px;
+    padding: 0 7px 0;
+    border: 1px solid #dddddd;
+    display: block;
+    color: #c4c4c4;
+    font-size: 11px;
+}
+.contact-us fieldset textarea {
+    width: 100%;
+    height: 79px;
+    padding: 1px 0 0 7px;
+    font-size: 11px;
+}
+.contact-field {
+    position: relative;
+    font-size: 11px;
+    float: right;
+    margin-right: 13px;
+    font-style: italic;
+    right: -4px;
+    color: #818181;
+}
+.contact-field:after{
+    content: "*";
+    position: absolute;
+    font-size: 14px;
+    color: #c74141;
+    top: -1px;
+    right: -8px;
+}
+.contact-us .submit {
+    position: relative;
+    font-size: 12px;
+    float: right;
+    border: none;
+    width: 79px;
+    height: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "Lato Semibold", sans-serif;
+    background: #dc462d;
+    border-radius: 3px;
+    -webkit-transition: background 0.3s ease;
+    transition: background 0.3s ease;
+    margin-top: 17px;
+}
+.contact-us .submit:hover{
+    opacity: 0.7;
+}
+.contact-us:after{
+    position: absolute;
+    content: "";
+    bottom: -39px;
+    right: 92px;
+    width: 40px;
+    height: 50px;
+    background: url("../img/casinos-icon-contact.png")no-repeat center;
+    background-size: contain;
+}
+.required{
+    display: inline-block;
+    width: 113px;
+    height: 18px;
+    padding-top: 4px;
+    background: #e8e9eb;
+    padding-left: 18px;
+    font-size: 12px;
+}
+.contact-us fieldset label {
+    position: absolute;
+    top: 0;
+    font-size: 12px;
+    line-height: 16px;
+    color: #c4c4c4;
+    padding-left: 8px;
+    opacity: 1;
+    -webkit-transition: opacity .3s ease-in-out;
+    transition: opacity .3s ease-in-out;
+    cursor: text;
+}
+.contact-us fieldset label:after{
+    content: '*';
+    position: relative;
+    font-size: 14px;
+    top: 2px;
+    margin-left: 3px;
+    color: #c74141;
+}
+.contact-us fieldset input:focus + label {
+    opacity: 0;
+}
+.contact-us fieldset textarea:focus + label {
+    opacity: 0;
+}
+.required>span:nth-child(1){
+    color:#9e0039;
+}
+.required>span:nth-child(2){
+    color:#39b54a;
+}
+.required>span:nth-child(3){
+    color:#00bff3;
+}
+.required>span:nth-child(4){
+    color:#a0a2a3;
+}
+.contact-us fieldset .captcha input[type="text"] {
+    position: relative;
+    font-size: 11px;
+    display: inline-block;
+    left: 2px;
+    bottom: 1px;
+    width: 164px;
+    height: 18px;
+    padding: 0 0 0 2px;
+    font-style: italic;
+}
+.contact-site{
+    display: block;
+    font-size: 12px;
+    color:#595e63;
+    text-align: center;
+    margin-bottom: 3px;
+    margin-left: -9px;
+}
+.contact-email{
+    display: block;
+    font-size: 12px;
+    color:#dc462d;
+    text-align: center;
+    margin-bottom: 3px;
+    margin-left: -9px;
+}
+
+.contact-hours{
+    display: block;
+    font-size: 12px;
+    text-align: center;
+    border-bottom: 1px solid #727272;
+    padding-bottom: 9px;
+    margin-bottom: 4px;
+    margin-left: -9px;
+}
+.contact-us fieldset input:focus + label {
+    opacity: 0 !important;
+}
+.contact-us fieldset textarea:focus + label {
+    opacity: 0 !important;
+}
+/* --------------- /contact --------------- */
+
+/* --------------- social --------------- */
+.social{
+    position: relative;
+    display: block;
+    text-align: center;
+    margin-top: -6px;
+    margin-left: -8px;
+    margin-bottom: 7px;
+}
+.social__item{
+    position: relative;
+    display: inline-block;
+    width: 26px;
+    height: 40px;
+    background: url("../img/social.png") no-repeat center;
+    background-size: contain;
+    margin: 0 1px;
+    z-index: 2;
+}
+.social__item:before{
+    position: absolute;
+    content: "";
+    top: 20px;
+    left: 10px;
+    width:7px;
+    height:14px;
+    background-size: contain;
+    z-index: 3;
+}
+.social_f:before{
+    background: url("../img/social-f.png") no-repeat center;
+    background-size: contain;
+}
+.social_tw:before{
+    width: 12px;
+    height: 10px;
+    top: 23px;
+    left: 8px;
+    background: url("../img/social-tw.png") no-repeat center;
+    background-size: contain;
+}
+.social_g:before{
+    width: 13.5px;
+    height: 12px;
+    top: 22px;
+    left: 8px;
+    background: url("../img/social-g.png") no-repeat center;
+    background-size: contain;
+}
+.social_p:before{
+    width: 11.5px;
+    height: 14px;
+    top: 20px;
+    left: 8px;
+    background: url("../img/social-p.png") no-repeat center;
+    background-size: contain;
+}
+.social__item:hover{
+    opacity: 0.7;
+}
+/* --------------- /social --------------- */
 
 @media (min-width: 768px) {
 
     /* --------------- site --------------- */
+    .site__content__item {
+        margin-bottom: 17px;
+    }
     .site:after {
         height: 320px;
     }
@@ -1527,10 +1771,82 @@ p{
         padding: 4px 0 0;
     }
     /* --------------- /ranking-trend --------------- */
+
+    /* --------------- contact --------------- */
+    .contact .site__title span:first-child{
+        display: none;
+    }
+    .contact .site__title span:last-child{
+        display: block;
+    }
+    .contact-hours {
+        padding-bottom: 13px;
+        margin-bottom: 12px;
+        margin-left: 6px;
+    }
+    .contact-field {
+        margin-right: 11px;
+    }
+    .contact-us{
+        margin-top: 27px;
+        padding-bottom: 0;
+    }
+    .contact-us fieldset input[type='text'],
+    .contact-us fieldset input[type='email'],
+    .contact-us fieldset textarea {
+        height: 25px;
+        margin-bottom: 8px;
+    }
+    .contact-us fieldset textarea {
+        height: 68px;
+        padding-top: 6px;
+    }
+    .required {
+        width: 176px;
+        height: 24px;
+        padding-top: 6px;
+        padding-left: 0;
+        text-align: center;
+        font-size: 13px;
+        margin-top: 10px;
+    }
+    .contact-us fieldset .captcha input[type="text"] {
+        width: 173px;
+        height: 24px;
+    }
+    .contact-us .submit {
+        width: 107px;
+        margin-top: -20px;
+        margin-right: 43px;
+    }
+    .contact-us:after {
+        bottom: -17px;
+        right: 172px;
+    }
+    .contact-us fieldset label {
+        line-height: 23px;
+    }
+    .social {
+        margin-top: -9px;
+        margin-left: 11px;
+    }
+    .contact-site {
+        margin-left: 13px;
+    }
+    .contact-email {
+        margin-left: 13px;
+    }
+    .contact>div {
+        padding: 12px 17px 20px 14px;
+    }
+    /* --------------- /contact --------------- */
 }
 @media (min-width: 960px) {
 
     /* --------------- site --------------- */
+    .contact>div {
+        padding: 0 29px 0 25px;
+    }
     .site:after{
         height: 233px;
     }
@@ -2014,7 +2330,6 @@ p{
         border-left: 706px solid #fff;
         bottom: 0;
     }
-
     /* --------------- /review --------------- */
 
     /* --------------- last-comments --------------- */
@@ -2303,6 +2618,134 @@ p{
         padding: 6px 0 0;
     }
     /* --------------- /ranking-trend --------------- */
+
+    /* --------------- contact --------------- */
+    .contact>div {
+        padding: 0 29px 0 25px;
+    }
+    .contact-site {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+    .contact-email {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+    .contact-hours {
+        font-size: 16px;
+    }
+    .contact-hours {
+        padding-bottom: 28px;
+        margin-bottom: 27px;
+    }
+    .contact-field {
+        margin-right: 14px;
+        font-size: 13px;
+    }
+    .contact-us {
+        margin-top: 49px;
+        padding-bottom: 100px;
+    }
+    .contact-us fieldset input[type='text'],
+    .contact-us fieldset input[type='email'],
+    .contact-us fieldset textarea {
+        height: 35px;
+        margin-bottom: 11.3px;
+        padding: 0px 15px 0;
+        font-size: 13px;
+    }
+    .contact-us fieldset textarea {
+        height: 153px;
+        padding: 8px 0 0 17px;
+        font-size: 13px;
+    }
+    .required {
+        width: 286px;
+        height: 36px;
+        padding-top: 6px;
+        font-size: 24px;
+        margin-top: 0px;
+    }
+    .contact-us fieldset .captcha input[type="text"] {
+        width: 415px;
+        height: 36px;
+        left: 4px;
+        bottom: 5px;
+        font-size: 13px;
+        padding: 0 0 0 13px;
+    }
+    .contact-us .submit {
+        width: 107px;
+        height: 30px;
+        font-size: 13px;
+        margin-top: 47px;
+        margin-right: 0;
+        padding-top: 4px;
+    }
+    .contact-us:after {
+        bottom: -8px;
+        right: 127px;
+        width: 80px;
+        height: 100px;
+    }
+    .contact-field:after {
+        font-size: 17px;
+        top: -4px;
+    }
+    .contact-us fieldset label {
+        font-size: 15px;
+        line-height: 32px;
+        padding-left: 17px;
+    }
+    .contact-email {
+        margin-left: 6px;
+    }
+    .contact-site {
+        margin-left:6px;
+    }
+    .social {
+        margin-top: -11px;
+        margin-left: 8px;
+    }
+    .contact-us .submit {
+        margin-top: 46px;
+    }
+    /* --------------- /contact --------------- */
+
+    /* --------------- social --------------- */
+    .social {
+        margin-bottom: 17px;
+    }
+    .social__item {
+        width: 53px;
+        height: 81px;
+        margin: 0 4px;
+    }
+    .social__item:before {
+        top: 42px;
+        left: 18px;
+        width: 14px;
+        height: 24px;
+    }
+    .social_tw:before {
+        width: 25px;
+        height: 20px;
+        top: 46px;
+        left: 15px;
+    }
+    .social_g:before {
+        width: 27px;
+        height: 24px;
+        top: 44px;
+        left: 15px;
+    }
+    .social_p:before {
+        width: 23px;
+        height: 28px;
+        top: 41px;
+        left: 12px;
+    }
+    /* --------------- /social --------------- */
 }
 @media (min-width: 1150px) {
 
@@ -2730,5 +3173,55 @@ p{
         padding: 7px 0 0;
     }
     /* --------------- /ranking-trend --------------- */
+
+    /* --------------- contact --------------- */
+    .contact-field {
+        margin-right: 15px;
+        font-size: 15px;
+    }
+    .required {
+        width: 345px;
+    }
+    .contact-us fieldset .captcha input[type="text"] {
+        width: 499px;
+    }
+    .contact-us .submit {
+        margin-top: 40px;
+        margin-right: 2px;
+    }
+    .contact-us:after {
+        right: 131px;
+    }
+    .contact-us fieldset label {
+        font-size: 15px;
+        line-height: 38px;
+        padding-left: 13px;
+    }
+    .contact-us fieldset label:after {
+        font-size: 16px;
+        top: -2px;
+        margin-left: 8px;
+    }
+    .social {
+        margin-top: -10px;
+        margin-left: -1px;
+        margin-bottom: 19px;
+    }
+    .contact-site {
+        margin-left: -1px;
+    }
+    .contact-email {
+        margin-left: -1px;
+    }
+    .contact-hours {
+        margin-left: -2px;
+    }
+    .contact-us {
+        margin: 49px auto 50px auto;
+    }
+    .contact-us:after {
+        bottom: -13px;
+    }
+    /* --------------- /contact --------------- */
 }
     
