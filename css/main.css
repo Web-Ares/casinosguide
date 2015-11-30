@@ -709,9 +709,10 @@
     -webkit-transition: background 0.3s ease;
     transition: background 0.3s ease;
     display: inline-block;
+    vertical-align: top;
 }
 .btn:hover{
-    background-color: #9ed726;
+    background-color: #8ec727;
 }
 .btn_rev{
     background: #e8e3e3;
@@ -725,6 +726,38 @@
     position: absolute;
     color: #fff;
     margin-left: 2px;
+}
+.btn_grey{
+    background: #dbdbdb;
+    color: #2c2829;
+}
+.btn_grey:hover{
+    background: #efefef;
+}
+.btn_red{
+    background: #dc462d;
+}
+.btn_red:hover{
+    background: #ff4f2f;
+}
+.btn_publish{
+    background: #76a612;
+    border: none;
+    border-bottom: 2px solid #cecccc;
+    box-shadow: 0 -2px 0 0 #60920c inset;
+}
+.btn_publish:hover{
+    background: #70990f;
+}
+.btn_cancel{
+    background: #eae9e9;
+    border: none;
+    color: #727272;
+    border-bottom: 2px solid #cecccc;
+    box-shadow: 0 -2px 0 0 #e4e3e3 inset;
+}
+.btn_cancel:hover{
+    background: #d0cfcf;
 }
 /* --------------- /btn --------------- */
 
@@ -1073,10 +1106,11 @@ p{
 }
 .ranking-trend .site__title{
     font-size: 13px;
-    padding: 10px 0 0 0;
+    line-height: 13px;
+    padding: 11px 0 0;
 }
 .ranking-trend .site__content__item>div{
-    padding: 4px 9px 0;
+    padding: 4px 9px 9px;
 }
 .ranking-trend__items{
     position: relative;
@@ -1134,6 +1168,7 @@ p{
     text-align: center;
     position: relative;
 }
+
 .rankin-trend__indicators>div>div{
     width: 20px;
     height: 100%;
@@ -1141,6 +1176,16 @@ p{
     left: 50%;
     bottom: 0;
     margin-left: -10px;
+}
+.rankin-trend__indicators>div.active>div:after{
+    content: '';
+    position: absolute;
+    top: -26px;
+    left: -3px;
+    background: url("../img/crown.png") no-repeat;
+    width: 27px;
+    height: 22px;
+    background-size: cover;
 }
 .rankin-trend__indicators div img{
     display: block;
@@ -1169,13 +1214,20 @@ p{
 
 /* --------------- tooltip --------------- */
 .tooltip{
-    display: inline-block;
+    display: inline-block !important;
     vertical-align: top;
     width: 14px;
     position: relative;
     z-index: 3;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    margin: -2px 6px 0;
 }
-.tooltip span{
+.tooltip_grey{
+
+}
+.tooltip span:first-child{
     width: 14px;
     height: 14px;
     border-radius: 14px;
@@ -1188,6 +1240,15 @@ p{
     display: inline-block;
     vertical-align: top;
     text-align: center;
+    padding: 1px 2px;
+    cursor: pointer;
+}
+.tooltip_grey span:first-child{
+    background: #c5c4c4;
+}
+.tooltip span:first-child:hover+.tooltip__dropdown{
+    opacity: 1;
+    visibility: visible;
 }
 .tooltip__dropdown{
     position: absolute;
@@ -1203,6 +1264,10 @@ p{
     line-height: 14px;
     box-shadow: 0 3px 0 0 #dbdbdb;
     padding: 15px 9px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity 300ms ease-in-out, visibility 300ms ease-in-out;
+    transition: opacity 300ms ease-in-out, visibility 300ms ease-in-out;
 }
 .tooltip__dropdown:after{
     content: '';
@@ -1215,6 +1280,136 @@ p{
     margin-left: -10.5px;
 }
 /* --------------- /tooltip --------------- */
+
+/* --------------- last-reviews --------------- */
+.last-reviews{
+
+}
+.last-reviews .site__title {
+    font-size: 13px;
+    line-height: 13px;
+    padding: 11px 0 0;
+}
+.last-reviews__main {
+    position: relative;
+    padding: 17px 0 11px 43px;
+    border-bottom: 1px solid #dbdbdb;
+    margin: 0 0 11px;
+    min-height: 70px;
+}
+.last-reviews__main h2{
+    font-size: 13px;
+    line-height: 13px;
+    color: #dc462d;
+    font-family: "Lato Semibold", sans-serif;
+    font-weight: 400;
+}
+.last-reviews__avatar{
+    width: 26px;
+    height: 29px;
+    position: absolute;
+    top: 13px;
+    left: 6px;
+}
+.last-reviews__avatar img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.last-reviews__btns{
+    padding: 11px 0 0;
+    margin: 0 0 7px;
+}
+.last-reviews__btns .btn{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    text-transform: none;
+    border-bottom: none;
+    width: 98px;
+    height: 16px;
+    padding: 2px 5px;
+    margin: 0 4px 8px 0;
+}
+.btn_write-review{
+    background: #76a612;
+    border-bottom: 2px solid #d9d9d9;
+    box-shadow: 0 -2px 0 0 #60920c inset;
+    width: 122px;
+    height: 21px;
+}
+.last-reviews__write{
+    position: absolute;
+    top: 4px;
+    right: 0;
+    background: #f2f0f0;
+    border: 2px solid #dddddd;
+    box-shadow: 0 2px 0 0 #dddddd;
+    z-index: 3;
+    max-width: 369px;
+    padding: 15px 31px 21px 31px;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity 300ms ease-in-out, visibility 300ms ease-in-out;
+    transition: opacity 300ms ease-in-out, visibility 300ms ease-in-out;
+}
+.last-reviews__write.opened{
+    visibility: visible;
+    opacity: 1;
+}
+.last-reviews__write-close{
+    position: absolute;
+    top: 7px;
+    right: 10px;
+    background: url("../img/close.png") no-repeat;
+    width: 8px;
+    height: 8px;
+    background-size: cover;
+    text-indent: -9999px;
+}
+.last-reviews__write h2{
+    margin: 0 0 13px;
+}
+.last-reviews__write textarea{
+    width: 100%;
+    height: 101px;
+    border: 1px solid #dddddd;
+    margin: 13px 0 1px;
+    padding: 7px 7px;
+    font-size: 10px;
+    line-height: 10px;
+}
+.top-casinos__status{
+    font-size: 10px;
+    line-height: 10px;
+    color: #dc462d;
+    font-family: "Lato Semibold", sans-serif;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 0 0 9px;
+}
+.last-reviews__write p{
+    color: #828181;
+    font-size: 11px;
+    line-height: 12px;
+    padding: 0 0 0 18px;
+    margin: 0 0 13px;
+    background: url("../img/review-planet.png") no-repeat left 1px;
+}
+.last-reviews__write .btn{
+    height: 18px;
+    width: 53px;
+    padding: 2px 6px;
+    font-size: 9px;
+    line-height: 9px;
+    margin: 0 11px 0 0;
+}
+.last-reviews__items{
+    height: 249px;
+    padding: 0 14px 0 0;
+}
+/* --------------- /last-reviews --------------- */
 
 
 @media (min-width: 768px) {
@@ -1493,6 +1688,13 @@ p{
     .ranking-trend{
         font-size: 12px;
         line-height: 12px;
+        margin: 0 0 14px;
+    }
+    .ranking-trend .site__title {
+        padding: 9px 0 0;
+    }
+    .ranking-trend .site__content__item>div {
+        padding: 3px 9px 2px;
     }
     .ranking-trend__numbers{
         bottom: 16px;
@@ -1516,6 +1718,56 @@ p{
         padding: 4px 0 0;
     }
     /* --------------- /ranking-trend --------------- */
+
+    /* --------------- last-reviews --------------- */
+    .last-reviews{
+
+    }
+    .last-reviews .site__title {
+        padding: 9px 0 0;
+    }
+    .last-reviews__main{
+        padding: 2px 0 7px 42px;
+        margin: 0 0 14px;
+    }
+    .last-reviews__main h2{
+        font-size: 13px;
+        line-height: 17px;
+        margin: 0 0 2px;
+    }
+    .last-reviews__avatar{
+        width: 26px;
+        height: 29px;
+        top: 0;
+        left: 6px;
+    }
+    .last-reviews__btns {
+        padding: 10px 0 0;
+        margin: 0 0 7px;
+    }
+    .last-reviews__btns .btn{
+        font-size: 12px;
+        line-height: 12px;
+        width: 97px;
+        height: 16px;
+        padding: 2px 5px;
+    }
+    .btn_write-review{
+        position: absolute;
+        right: -9px;
+        top: 0;
+        height: 21px;
+        width: 123px;
+    }
+    .last-reviews__write h2{
+        margin: 0 0 13px;
+    }
+    .last-reviews__write{
+        top: 0;
+        right: -12px;
+    }
+    /* --------------- /last-reviews --------------- */
+
 }
 @media (min-width: 960px) {
 
@@ -2243,8 +2495,16 @@ p{
         font-size: 16px;
         line-height: 16px;
     }
+    .ranking-trend .site__title {
+        padding: 23px 0 0;
+        font-size: 18px;
+        line-height: 20px;
+    }
     .ranking-trend__numbers{
         bottom: 56px;
+    }
+    .ranking-trend .site__content__item>div {
+        padding: 19px 30px 24px 20px;
     }
     .ranking-trend__items{
         height: 421px;
@@ -2273,7 +2533,122 @@ p{
     .rankin-trend__dates>span {
         padding: 6px 0 0;
     }
+    .rankin-trend__indicators>div.active>div:after{
+        top: -55px;
+        left: -7px;
+        width: 55px;
+        height: 45px;
+    }
     /* --------------- /ranking-trend --------------- */
+
+    /* --------------- tooltip --------------- */
+    .tooltip {
+        margin: -3px 6px 0;
+    }
+    .tooltip span:first-child{
+        width: 20px;
+        height: 20px;
+        border-radius: 20px;
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .tooltip__dropdown{
+        top: 32px;
+        margin-left: -119px;
+    }
+    /* --------------- /tooltip --------------- */
+
+    /* --------------- last-reviews --------------- */
+    .last-reviews{
+
+    }
+    .last-reviews .site__title {
+        padding: 23px 0 0;
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .last-reviews__main{
+        padding: 4px 171px 41px 88px;
+        margin: 0 0 29px;
+    }
+    .last-reviews__main h2{
+        font-size: 24px;
+        line-height: 27px;
+    }
+    .last-reviews__avatar{
+        width: 53px;
+        height: 59px;
+        top: -4px;
+        left: 9px;
+    }
+    .last-reviews__btns {
+        padding: 18px 0 0;
+        margin: 0;
+    }
+    .last-reviews__btns .btn{
+        font-size: 13px;
+        line-height: 13px;
+        width: 116px;
+        height: 25px;
+        padding: 6px 5px;
+    }
+    .btn_write-review{
+        position: absolute;
+        right: 10px;
+        top: 0;
+        height: 34px;
+        width: 163px;
+    }
+    .last-reviews__items {
+        height: 439px;
+        padding: 15px 55px 0 0;
+    }
+
+    .last-reviews__write{
+        top: -6px;
+        right: -17px;
+        max-width: 738px;
+        padding: 35px 61px 49px 64px;
+    }
+    .last-reviews__write-close{
+        top: 15px;
+        right: 21px;
+        width: 19px;
+        height: 19px;
+    }
+    .last-reviews__write h2{
+        margin: 0 0 32px;
+    }
+    .last-reviews__write textarea{
+        height: 202px;
+        margin: 29px 0 9px;
+        padding: 17px 15px;
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .top-casinos__status{
+        font-size: 18px;
+        line-height: 18px;
+        margin: 0 0 0 20px;
+    }
+    .last-reviews__write p{
+        color: #828181;
+        font-size: 14px;
+        line-height: 17px;
+        padding: 0 0 0 21px;
+        margin: 0 0 28px;
+        background: url("../img/review-planet.png") no-repeat left 2px;
+    }
+    .last-reviews__write .btn{
+        height: 33px;
+        width: 106px;
+        padding: 8px 6px;
+        margin: 0;
+        font-size: 12px;
+        line-height: 12px;
+    }
+    /* --------------- /last-reviews --------------- */
+
 }
 @media (min-width: 1150px) {
 
@@ -2658,6 +3033,14 @@ p{
         font-size: 16px;
         line-height: 16px;
     }
+    .ranking-trend .site__title {
+        padding: 24px 0 0;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .ranking-trend .site__content__item>div {
+        padding: 11px 30px 21px 20px;
+    }
     .ranking-trend__numbers{
         bottom: 0;
     }
@@ -2688,6 +3071,72 @@ p{
     .rankin-trend__dates>span {
         padding: 7px 0 0;
     }
+    .rankin-trend__indicators>div.active>div:after{
+        top: -55px;
+        left: -7px;
+        width: 55px;
+        height: 45px;
+    }
     /* --------------- /ranking-trend --------------- */
+
+    /* --------------- tooltip --------------- */
+    .tooltip {
+        margin: 1px 6px 0;
+    }
+    .tooltip span:first-child{
+        width: 14px;
+        height: 14px;
+        border-radius: 14px;
+        font-size: 12px;
+        line-height: 12px;
+        padding: 1px 2px;
+    }
+    .tooltip__dropdown{
+        top: 25px;
+        margin-left: -122px;
+    }
+    /* --------------- /tooltip --------------- */
+
+    /* --------------- last-reviews --------------- */
+    .last-reviews{
+
+    }
+    .last-reviews .site__title {
+        padding: 24px 0 0;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .last-reviews__main{
+        padding: 5px 0 42px 82px;
+        margin: 0 0 41px;
+    }
+    .last-reviews__main h2{
+        font-size: 24px;
+        line-height: 27px;
+    }
+    .last-reviews__avatar{
+        top: -4px;
+        left: 3px;
+    }
+    .last-reviews__btns .btn{
+        font-size: 13px;
+        line-height: 13px;
+        width: 116px;
+        height: 25px;
+        padding: 6px 5px;
+    }
+    .btn_write-review{
+        right: 0;
+        top: 0;
+    }
+    .last-reviews__write h2{
+        margin: 0 0 32px;
+    }
+    .last-reviews__items {
+        height: 434px;
+        padding: 15px 27px 0 0;
+    }
+    /* --------------- /last-reviews --------------- */
+
 }
     

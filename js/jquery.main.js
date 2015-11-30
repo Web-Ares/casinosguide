@@ -11,6 +11,14 @@
             new Graph ( $(this) );
         } );
 
+        $.each( $('.last-reviews__items'), function(){
+            new Review( $(this) );
+        } );
+
+        $.each( $('.last-reviews__main'), function(){
+            new WriteReview( $(this) );
+        } );
+
         new Menu();
 
     });
@@ -181,28 +189,16 @@
         var _obj = obj,
             _graph = _obj.find('.rankin-trend__graph'),
             _scroll = null,
-            a,
             _window = $(window);
 
         var _addEvents = function () {
 
                 _window.on({
                     'resize': function(){
-                        if(_window.width()<768){
-                            _scroll.getNiceScroll({cursorwidth: "10px"});
-                        }else{
-                            _scroll.getNiceScroll({cursorwidth: "18px"});
-                        }
                         _scroll.resize();
-
 
                     },
                     'load': function(){
-                        if(_window.width()<768){
-                            _scroll.getNiceScroll({cursorwidth: "10px"});
-                        }else{
-                            _scroll.getNiceScroll({cursorwidth: "18px"});
-                        }
                         _addScroll();
 
                     }
@@ -215,7 +211,7 @@
                     cursoropacitymin: "1",
                     cursorborderradius: "0",
                     cursorborder: false,
-                    cursorwidth: a,
+                    cursorwidth: "18px",
                     touchbehavior: true,
                     background: "#efefef",
                     railpadding: {
@@ -225,6 +221,89 @@
                         bottom: 0
                     }
                 });
+            },
+            _init = function () {
+                _addEvents();
+            };
+
+        _init();
+    };
+
+    var Review = function (obj) {
+
+        var _obj = obj,
+            _scroll = null,
+            _window = $(window);
+
+        var _addEvents = function () {
+
+                _window.on({
+                    'resize': function(){
+                        _scroll.resize();
+
+                    },
+                    'load': function(){
+                        _addScroll();
+
+                    }
+                });
+
+            },
+            _addScroll = function(){
+                _scroll = _obj.niceScroll({
+                    cursorcolor:"#dbdbdb",
+                    cursoropacitymin: "0",
+                    cursorborderradius: "0",
+                    cursorborder: false,
+                    cursorwidth: "12px",
+                    touchbehavior: true,
+                    background: "#efefef",
+                    railpadding: {
+                        top: 0,
+                        right: 0,
+                        left: 0,
+                        bottom: 0
+                    }
+                });
+            },
+            _init = function () {
+                _addEvents();
+            };
+
+        _init();
+    };
+
+    var WriteReview = function (obj) {
+
+        var _obj = obj,
+            _review = _obj.find('.last-reviews__write'),
+            _writeReview = _obj.find('.btn_write-review'),
+            _reviewClose = _review.find('.last-reviews__write-close');
+
+        var _addEvents = function () {
+
+                _writeReview.on({
+                    'click': function(){
+                        if(!_review.hasClass('opened')){
+                            _review.addClass('opened');
+                        }else{
+                            _review.removeClass('opened');
+                        }
+
+                        return false;
+
+                    }
+                });
+
+                _reviewClose.on({
+                    'click': function(){
+                        _review.removeClass('opened');
+
+                        return false;
+
+                    }
+                });
+
             },
             _init = function () {
                 _addEvents();

@@ -19,7 +19,7 @@
 :focus:-moz-placeholder           {color: transparent}
 :focus:-ms-input-placeholder      {color: transparent}
 /* --------------- /placeholder --------------- */
-.site__title span:last-child{
+.site__title>span:last-child{
     display: none;
 }
 /* --------------- contact --------------- */
@@ -249,10 +249,10 @@
 /* --------------- /social --------------- */
 
 @media (min-width: 768px) {
-    .site__title span:first-child{
+    .site__title>span:first-child{
         display: none;
     }
-    .site__title span:last-child{
+    .site__title>span:last-child{
         display: block;
     }
     /* --------------- contact --------------- */
