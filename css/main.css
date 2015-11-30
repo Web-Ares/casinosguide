@@ -425,8 +425,8 @@
 }
 /* --------------- /logo --------------- */
 /* --------------- top-casinos --------------- */
-.top-casinos{
-
+.site__content__item .top-casinos{
+    padding-left: 5px;
 }
 .top-casinos__item{
     position: relative;
@@ -438,7 +438,7 @@
     width: 304px;
     height: 1px;
     background-color: #ddd;
-    left: -11px;
+    left: -6px;
     bottom: -20px;
 }
 .top-casinos__item:last-child:after{
@@ -512,7 +512,7 @@
     display: inline-block;
     vertical-align: middle;
     width: 118px;
-    margin-right: 3px;
+    margin-right: 2px;
 }
 .top-casinos__item>div>div {
     display: inline-block;
@@ -530,11 +530,13 @@
     top: -3px;
 }
 .top-casinos__item> div{
-    margin-bottom: 12px;
     font-weight: bold;
+    height: 18px;
+    margin-bottom: 12px;
 }
 .top-casinos__item> div:first-child{
     padding-top: 8px;
+    margin-bottom: 39px;
 }
 .top-casinos__item>div:first-child >div{
     margin-left: 6px;
@@ -551,9 +553,22 @@
 }
 .top-casinos-compare img{
     height: 23px;
+    opacity: 1;
+}
+.top-casinos-compare img:hover {
+    opacity: 0.5;
+    transition: opacity .5s ease;
+    -webkit-transition: opacity .5s ease;
+
 }
 .top-casinos-rate img{
     height: 21px;
+    opacity: 1;
+}
+.top-casinos-rate img:hover {
+    opacity: 0.5;
+    transition: opacity .5s ease;
+    -webkit-transition: opacity .5s ease;
 }
 .top-casinos-software{
     color: #e16959;
@@ -1910,6 +1925,9 @@ p{
     .site__footer-menu li {
         padding: 0 9px;
     }
+    .site__content__item .top-casinos {
+        padding-left: 15px;
+    }
     /* --------------- /site --------------- */
 
     /* --------------- logo --------------- */
@@ -1940,6 +1958,7 @@ p{
     /* --------------- top-casinos --------------- */
     .top-casinos-games>div{
         padding-top: 0;
+        padding-left: 16px;
     }
     .top-casinos__item-logo img {
         margin-right: 20px;
@@ -1949,6 +1968,7 @@ p{
     }
     .top-casinos__item> div {
         margin-bottom: 13px;
+        height: 17px;
     }
     .top-casinos__item>div>span {
         margin-right: 59px;
@@ -1971,7 +1991,7 @@ p{
         width: 726px;
         height: 1px;
         background-color: #ddd;
-        left: -10px;
+        left: -15px;
         bottom: -20px;
     }
     /* --------------- /top-casinos --------------- */
@@ -2516,6 +2536,9 @@ p{
     .site__footer-menu li {
         padding: 0 10px;
     }
+    .site__content__item .top-casinos {
+        padding-left: 23px;
+    }
     /* --------------- /site --------------- */
 
     /* --------------- logo --------------- */
@@ -2606,7 +2629,7 @@ p{
         width: 763px;
         height: 1px;
         background-color: #ddd;
-        left: -23px;
+        left: -24px;
         bottom: 1px;
     }
     .top-casinos__item:after {
@@ -2615,8 +2638,8 @@ p{
         width: 763px;
         height: 1px;
         background-color: #ddd;
-        left: -23px;
-        bottom: -10px;
+        left: -24px;
+        bottom: -30px;
     }
     .top-casinos__item {
         margin-bottom: 11px;
@@ -2711,6 +2734,7 @@ p{
     }
     .top-casinos__item {
         padding-top: 14px;
+        margin-bottom: 31px;
     }
     .top-casinos-compare{
         margin-right: 12px;
@@ -3732,6 +3756,9 @@ p{
     .site__content__section {
         width: 913px;
     }
+    .site__content__item .top-casinos {
+        padding-left: 12px;
+    }
     /* --------------- /site --------------- */
     p {
         line-height: 18px;
@@ -3809,22 +3836,22 @@ p{
     }
     .top-casinos__head {
         padding-top: 29px;
-        margin-bottom: 3px;
+        margin-bottom: 2px;
     }
     .top-casinos__head:after {
         width: 913px;
-        left: -31px;
+        left: -13px;
         bottom: 1px;
     }
     .top-casinos__item {
-        margin-bottom: 3px;
+        margin-bottom: 16px;
         padding-top: 0;
     }
     .top-casinos__item:after {
         content: "";
         width: 912px;
-        left: -31px;
-        bottom: 1px;
+        left: -12px;
+        bottom: -13px;
     }
     .top-casinos-country {
         width: 153px;
@@ -3848,8 +3875,11 @@ p{
         margin-right: 18px;
     }
     .top-casinos-play {
-        top: 9px;
-        right: -27px;
+        top: 10px;
+        right: -26px;
+    }
+    .top-casinos-play a {
+        margin-bottom: 4px;
     }
     .country-flags {
         margin-right: 33px;
@@ -3896,8 +3926,9 @@ p{
         margin-right: 24px;
     }
     .top-casinos-software {
-        margin-left: 9px;
-        top: 6px;}
+        margin-left: 13px;
+        top: 6px;
+    }
     /* --------------- /top-casinos --------------- */
 
     /* --------------- review --------------- */
