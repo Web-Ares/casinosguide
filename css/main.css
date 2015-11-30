@@ -2113,6 +2113,12 @@ p{
     .review__description-right dl dd:last-child {
         margin-bottom: 4px;
     }
+    .review-section{
+        padding: 12px 10px 20px 10px;
+    }
+    .site__content__item .review{
+        padding: 0;
+    }
     /* --------------- /review --------------- */
 
 
@@ -3722,6 +3728,9 @@ p{
     }
     .site__footer-copyright {
         margin: 0 0 10px;
+    }
+    .site__content__section {
+        width: 913px;
     }
     /* --------------- /site --------------- */
     p {
