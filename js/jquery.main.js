@@ -181,16 +181,30 @@
         var _obj = obj,
             _graph = _obj.find('.rankin-trend__graph'),
             _scroll = null,
+            a,
             _window = $(window);
 
         var _addEvents = function () {
 
                 _window.on({
                     'resize': function(){
+                        if(_window.width()<768){
+                            _scroll.getNiceScroll({cursorwidth: "10px"});
+                        }else{
+                            _scroll.getNiceScroll({cursorwidth: "18px"});
+                        }
                         _scroll.resize();
+
+
                     },
                     'load': function(){
+                        if(_window.width()<768){
+                            _scroll.getNiceScroll({cursorwidth: "10px"});
+                        }else{
+                            _scroll.getNiceScroll({cursorwidth: "18px"});
+                        }
                         _addScroll();
+
                     }
                 });
 
@@ -201,7 +215,7 @@
                     cursoropacitymin: "1",
                     cursorborderradius: "0",
                     cursorborder: false,
-                    cursorwidth: "18px",
+                    cursorwidth: a,
                     touchbehavior: true,
                     background: "#efefef",
                     railpadding: {

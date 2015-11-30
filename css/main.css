@@ -1071,6 +1071,13 @@ p{
     line-height: 13px;
     font-family: "helvetica roman", sans-serif;
 }
+.ranking-trend .site__title{
+    font-size: 13px;
+    padding: 10px 0 0 0;
+}
+.ranking-trend .site__content__item>div{
+    padding: 4px 9px 0;
+}
 .ranking-trend__items{
     position: relative;
     height: 220px;
