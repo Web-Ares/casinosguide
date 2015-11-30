@@ -2892,20 +2892,20 @@ p{
         padding-bottom: 10px;
         padding-top: 87px;
     }
-    .review__bonus-descr dt:first-child{
-
-    }
-    .review__bonus-descr dd:nth-child(2){
-
+    .review__bonus-descr .show-mobile{
+        display: none;
     }
     .review-data {
         font-size: 14px;
         display: inline-block;
+        padding: 13px 0 17px 1px;
+        width: 322px;
+        line-height: 17px;
     }
     .review__bonus-descr dl {
         font-size: 14px;
         text-align: center;
-        margin-bottom: 37px;
+        margin-bottom: 9px;
     }
     .review__bonus-descr .btn {
         width: 107px;
@@ -2917,6 +2917,13 @@ p{
         margin-left: -53px;
         bottom: -18px;
         z-index: 2;
+    }
+    .review__bonus-descr dd {
+        width: 295px;
+        line-height: 16px;
+        margin-bottom: 9px;
+        left: 3px;
+        position: relative;
     }
     .review__bonus-descr .btn:after{
         content: ">>";
@@ -3990,8 +3997,8 @@ p{
         margin-bottom: 96px;
     }
     .review__bonus-descr dl {
-        left: 0;
-        margin-bottom: 13px;
+        left: -2px;
+        margin-bottom: -19px;
     }
     .review__bonus-descr .btn {
         bottom: -41px;
@@ -4106,6 +4113,18 @@ p{
         margin-top: 28px;
         padding-bottom: 0;
     }
+    .review-data {
+        font-size: 14px;
+        display: inline-block;
+        padding: 10px 0 16px 0px;
+        width: 383px;
+        line-height: 17px;
+        position: relative;
+        left: -3px;
+    }
+    .review__bonus-descr dd {
+        margin-bottom: 15px;
+    }
     /* --------------- /review --------------- */
 
     /* --------------- compare  --------------- */
@@ -4114,7 +4133,7 @@ p{
         padding-bottom: 12px;
     }
     .compare {
-        margin-top: 0px;
+        margin-top: 0;
     }
     .compare .compare__item:nth-child(5) {
         display: table-cell;
