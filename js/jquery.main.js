@@ -212,7 +212,7 @@
                     cursorborderradius: "0",
                     cursorborder: false,
                     cursorwidth: "18px",
-                    touchbehavior: true,
+                    //touchbehavior: true,
                     horizrailenabled: true,
                     background: "#efefef",
                     railpadding: {
