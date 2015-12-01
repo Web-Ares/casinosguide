@@ -1797,6 +1797,9 @@ p{
     background-size: cover;
     text-indent: -9999px;
 }
+.last-reviews__write-close:hover{
+    opacity: 0.6;
+}
 .last-reviews__write h2{
     margin: 0 0 13px;
 }
@@ -3688,7 +3691,7 @@ p{
         height: 33px;
         width: 106px;
         padding: 8px 6px;
-        margin: 0;
+        margin: 0 24px 0 0;
         font-size: 12px;
         line-height: 12px;
     }
