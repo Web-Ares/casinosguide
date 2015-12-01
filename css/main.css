@@ -3728,7 +3728,7 @@ p{
         max-width: 1150px;
     }
     .site__header-search{
-        right: 133px;
+        right: 129px;
     }
     .site__content-wrap>div{
         max-width: 1150px;
@@ -3742,7 +3742,7 @@ p{
     .site__footer-layout{
         height: 223px;
         max-width: 1150px;
-        padding: 33px 278px 0 272px;
+        padding: 30px 271px 0 285px;
     }
     .site__footer-menu{
         font-size: 11px;
@@ -3763,6 +3763,10 @@ p{
     .site__content__item .top-casinos {
         padding-left: 12px;
     }
+    .site__footer-logo {
+        left: 7px;
+        top: 21px;
+    }
     /* --------------- /site --------------- */
     p {
         line-height: 18px;
@@ -3770,7 +3774,7 @@ p{
     /* --------------- logo --------------- */
     .logo {
         top: 5px;
-        left: 74px;
+        left: 77px;
         width: 389px;
         height: 176px;
     }
