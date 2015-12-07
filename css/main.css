@@ -1271,7 +1271,7 @@
 }
 .terms-title{
     font-family: "Lato Semibold", sans-serif;
-    font-size: 10px;
+    font-size: 12px;
     margin-bottom:10px;
 }
 p{
@@ -1283,9 +1283,7 @@ p{
     text-align: justify;
 }
 .terms p{
-    font-size: 10px;
     margin-bottom: 12px;
-    line-height: 11px;
     padding-left: 0px;
 }
 .terms div p:first-child{
