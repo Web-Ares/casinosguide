@@ -2087,7 +2087,7 @@ p{
         position: relative;
         top: -7px;
         left: -2px;
-        margin-bottom: 6px;
+        margin-bottom: 15px;
     }
     .review__description-left .systems>img {
         height: 23px;
@@ -2983,7 +2983,6 @@ p{
         display: none;
     }
     .review__description-left .systems>img {
-        height: 30px;
         margin-right: 2px;
     }
     .review__description-left dl{
@@ -4028,7 +4027,7 @@ p{
         width: 194px;
         padding-left: 20px;
         padding-top: 29px;
-        padding-bottom: 55px;
+        padding-bottom: 51px;
     }
     .review__description-left dl:before {
         content: '';
