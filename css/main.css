@@ -503,7 +503,8 @@
     vertical-align: top;
     width: 24px;
     height: 24px;
-    background: url(../img/bigsprite.png) no-repeat;
+    background: url(../img/flag001.png) no-repeat center;
+    background-size: 24px 16px;
 }
 .top-casinos__item>div>span {
     text-transform: uppercase;
@@ -1154,7 +1155,7 @@
 .compare__sore span{
     font-family: "Lato Black", sans-serif;
     font-size: 12px;
-    color: #76a612;
+    color: #dc462d;
     display: inline-block;
     margin-top: 23px;
     margin-left: 2px;
@@ -2549,6 +2550,14 @@ p{
     }
     /* --------------- /logo --------------- */
 
+    /* --------------- country-flags --------------- */
+    .country-flags {
+        width: 32px;
+        height: 24px;
+        background-size: 32px 24px;
+    }
+    /* --------------- /country-flags --------------- */
+
     /* --------------- follow-us --------------- */
     .follow-us__item {
         width: 374px;
@@ -3779,6 +3788,15 @@ p{
         height: 176px;
     }
     /* --------------- /logo --------------- */
+
+    /* --------------- country-flags --------------- */
+    .country-flags {
+        width: 38px;
+        height: 25px;
+        background-size: 38px 25px;
+    }
+    /* --------------- /country-flags --------------- */
+
     .follow-us__title {
         margin-bottom: 18px;
     }
